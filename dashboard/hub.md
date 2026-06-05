@@ -4,9 +4,9 @@
 
 ## Dashboard
 
-| File | Purpose |
-|------|---------|
-| [phase-tracker.md](phase-tracker.md) | Progress per phase — %, KPIs, dates |
+| File                                   | Purpose                                |
+| -------------------------------------- | -------------------------------------- |
+| [phase-tracker.md](phase-tracker.md)   | Progress per phase — %, KPIs, dates    |
 | [bug-bounty-log.md](bug-bounty-log.md) | Valid findings log (Phase C → ongoing) |
 
 ---
@@ -44,7 +44,16 @@
 
 ---
 
-## Writeup Naming Convention
+## Writeups
+
+| Date       | Phase | File                                                                                                         |
+| ---------- | ----- | ------------------------------------------------------------------------------------------------------------ |
+| 2026-06-05 | A     | [2026-06-05_THM_LinuxFundamentals1.md](../phase-a-foundations/writeups/2026-06-05_THM_LinuxFundamentals1.md) |
+| —          | —     | —                                                                                                            |
+
+
+
+### Naming Convention
 
 ```
 writeups/YYYY-MM-DD_PLATFORM_TARGET.md
