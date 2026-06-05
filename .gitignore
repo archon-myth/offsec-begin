@@ -1,4 +1,63 @@
-# Byte-compiled / optimized / DLL files
+# ─── Credentials & Keys ─────────────────────────────────────────────────────
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa
+id_ed25519
+id_ecdsa
+*.ovpn
+creds/
+credentials/
+loot/
+secrets/
+.env
+.envrc
+
+# ─── Network Captures ────────────────────────────────────────────────────────
+*.pcap
+*.pcapng
+*.cap
+
+# ─── Scan & Tool Output ──────────────────────────────────────────────────────
+*.gnmap
+*.nmap
+*.xml
+*.nessus
+scans/
+recon/output/
+
+# ─── Compiled Binaries & Shellcode ───────────────────────────────────────────
+*.exe
+*.elf
+*.bin
+*.o
+*.out
+shellcode/
+payloads/
+
+# ─── Hashes & Wordlists ──────────────────────────────────────────────────────
+*.hash
+*.hashes
+hashes/
+wordlists/
+rockyou*.txt
+
+# ─── OS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ─── Editor Temp ─────────────────────────────────────────────────────────────
+*.swp
+*.swo
+*~
+*.tmp
+
+# ─── Byte-compiled / optimized / DLL files ───────────────────────────────────
+
 __pycache__/
 *.py[codz]
 *$py.class
