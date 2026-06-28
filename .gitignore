@@ -83,3 +83,9 @@ $RECYCLE.BIN/
 *~
 *.tmp
 tempCodeRunnerFile.py
+
+# ─── Obsidian — track theme/plugins/config; ignore session + cache ───────────
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/

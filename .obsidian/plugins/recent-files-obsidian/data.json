@@ -1,0 +1,28 @@
+{
+  "recentFiles": [
+    {
+      "basename": "Setup-VirtualBox",
+      "path": "phase-0-setup/notes/Setup-VirtualBox.md"
+    },
+    {
+      "basename": "phase-tracker",
+      "path": "dashboard/phase-tracker.md"
+    },
+    {
+      "basename": "index",
+      "path": "dashboard/index.md"
+    },
+    {
+      "basename": "bug-bounty-log",
+      "path": "dashboard/bug-bounty-log.md"
+    },
+    {
+      "basename": "hub",
+      "path": "dashboard/hub.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}
