@@ -333,6 +333,7 @@ flowchart LR
 6. [Linux for Hackers: LINUX commands you need to know (with OTW) // Ep 6](https://www.youtube.com/watch?v=DiGangfhJ4g) — Permissions ขั้นสูง (SUID, GUID) และ Text parsing (`awk`, `sed`, `grep`)
 
 ##### 1.4 David Bombal — Shell Setup & Boot
+> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-linux-basics-otw#ส่วนที่ 1.4 Shell Setup Boot Mastery|เปิดไฟล์โน้ต: phase-a-foundations/notes/bombal-linux-basics-otw.md (ส่วนที่ 1.4)]]
 - [Dual Boot Windows and Ubuntu Linux in 10 Minutes](https://www.youtube.com/watch?v=UTqDuWHbZkw) — โครงสร้าง Bootloader และ Partitioning
 - [Learn Linux in 180s - history command](https://www.youtube.com/watch?v=3e2oYpEKrXE) — Shell history audit (`history`, `!`, reverse-i-search)
 
