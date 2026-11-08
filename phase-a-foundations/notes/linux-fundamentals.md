@@ -109,11 +109,18 @@ cp ~/lab/test_dir/targets.txt ~/lab/targets_backup.txt
 
 # ลบไฟล์และโฟลเดอร์แบบ Recursive Force
 rm -rf ~/lab/test_dir
+
+# ตรวจสอบตำแหน่ง Binary ของคำสั่งใน Filesystem (ค้นหาตามตัวแปร $PATH)
+which ls                        # ผลลัพธ์: /usr/bin/ls (พิสูจน์ว่าคำสั่งคือไฟล์ binary ในระบบไฟล์)
+which cat                       # ผลลัพธ์: /usr/bin/cat
+
+# สร้างผู้ใช้งานใหม่ในระบบ (สังเกตการสร้างโฟลเดอร์ใน /home และเขียนข้อมูลลง /etc/passwd)
+sudo adduser newuser
 ```
 
 ### 🧠 Feynman Takeaway & Reflection
-- *สรุปด้วยคำพูดตัวเอง:* 
-- *จุดที่น่าสนใจ / ข้อควรระวัง:* 
+- *สรุปด้วยคำพูดตัวเอง:* ทุกคำสั่งใน Linux (`ls`, `cat`) แท้จริงแล้วเป็นไฟล์ Executable Binary ที่เก็บอยู่ใน `/bin` หรือ `/usr/bin` ไม่ใช่ฟังก์ชันเวทมนตร์ และระบบทำงานแบบ "Everything is a file" แม้แต่การเพิ่ม user ด้วย `adduser` ก็คือการสร้าง directory ใน `/home/<user>` และเขียนบรรทัดใหม่ลงใน `/etc/passwd`
+- *จุดที่น่าสนใจ / ข้อควรระวัง:* เราทดลอง `cd /bin` แล้วใช้ `sudo cp ls newls` ทำให้เราสามารถเรียกใช้ `newls` แทน `ls` ได้ทันที — ในสาย Offensive Security นี่คือแนวคิดของ **Binary Renaming / LOLBins / Persistence** (แฮกเกอร์แอบก๊อปปี้และเปลี่ยนชื่อ binary เพื่อหลบ EDR/Antivirus) และการที่ระบบรู้ว่าต้องไปเรียกโปรแกรมจากโฟลเดอร์ไหน เกิดจากการค้นหาตามตัวแปร `$PATH` (ซึ่งเช็กที่อยู่ไฟล์ได้ด้วย `which`)
 
 ---
 
