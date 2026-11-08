@@ -42,8 +42,13 @@ ls -la
 # สลับไปยังไดเรกทอรีที่ต้องการ
 cd /etc
 
-# กลับขึ้นไป 1 ชั้น
+# ถอยกลับไปยัง Parent Directory 1 ระดับ (Relative Path)
 cd ..
+
+# ทางลัดนำทางด่วน (Navigation Shortcuts)
+cd ../..       # ถอยกลับ 2 ระดับรวดเดียว
+cd -           # สลับกลับไปยังไดเรกทอรีล่าสุดที่เพิ่งจากมา (เสมือนปุ่ม Back)
+cd ~           # กลับสู่ Home Directory ทันที (หรือพิมพ์แค่ cd เปล่าๆ)
 
 # ตรวจสอบเวอร์ชันของ Kernel และสถาปัตยกรรมระบบ
 uname -a
@@ -54,7 +59,7 @@ clear
 
 ### 🧠 Feynman Takeaway & Reflection
 - *สรุปด้วยคำพูดตัวเอง:* Linux เป็นทั้ง kernel และ OS คล้ายกับ Windows, Mac แต่เร็วกว่า มีประสิทธิภาพมากกว่า ปลอดภัยกว่า เป็นที่นิยมกว่า โดยเฉพาะ Hacker
-- *จุดที่น่าสนใจ / ข้อควรระวัง:* เราเลิกใช้ GUI แต่จะพิมพ์คำสั่งใน Terminal
+- *จุดที่น่าสนใจ / ข้อควรระวัง:* เราเลิกใช้ GUI แต่จะพิมพ์คำสั่งใน Terminal | สัญลักษณ์ '..' (Parent Directory) สำคัญมาก เพราะเป็นรากฐานของช่องโหว่ Directory Traversal (../../../../etc/passwd) ในสาย Web App Pentest
 
 ---
 
@@ -90,6 +95,11 @@ mkdir -p ~/lab/test_dir
 
 # สร้างไฟล์เปล่า
 touch ~/lab/test_dir/note.txt
+
+# อ่านเนื้อหาในไฟล์ออกมาแสดงผลบน Terminal (Concatenate)
+cat ~/lab/test_dir/note.txt
+cat -n /etc/issue               # แสดงเนื้อหาพร้อมกำกับหมายเลขบรรทัด (-n)
+cat /etc/os-release             # เปิดอ่านข้อมูล OS ประจำเครื่อง (Reconnaissance พื้นฐาน)
 
 # ย้ายและเปลี่ยนชื่อไฟล์
 mv ~/lab/test_dir/note.txt ~/lab/test_dir/targets.txt
