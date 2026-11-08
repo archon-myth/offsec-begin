@@ -301,6 +301,8 @@ flowchart LR
 #### 🎬 Phase 1 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
 ##### 1.1 NetworkChuck — Linux for Hackers (ครบทั้ง 10 ตอน)
+> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[networkchuck-linux-for-hackers|เปิดไฟล์โน้ต: phase-a-foundations/notes/networkchuck-linux-for-hackers.md]]
+
 1. [Linux for Hackers // EP 1 (FREE Linux course for beginners)](https://www.youtube.com/watch?v=VbEx7B_PTOE) — เริ่มต้นใช้ Command Line และปรัชญาของ Linux
 2. [the Linux File System explained in 1,233 seconds // EP 2](https://www.youtube.com/watch?v=A3G-3hp88mo) — ผ่าโครงสร้างไดเรกทอรี `/bin`, `/etc`, `/home`, `/var`
 3. [HELP!! (for when you suck at Linux) // EP 3](https://www.youtube.com/watch?v=Y17KTiJLcyQ) — การใช้ `man`, `--help`, และการแก้ปัญหาเมื่อพิมพ์คำสั่งไม่ถูก
@@ -313,6 +315,8 @@ flowchart LR
 10. [i KILLED my Linux computer!! (to teach you something)](https://www.youtube.com/watch?v=ugt3PBeqHIo) — วิเคราะห์ความผิดพลาดเมื่อระบบพัง และวิธี Troubleshooting
 
 ##### 1.2 NetworkChuck — learn BASH Scripting (ครบทั้ง 5 ตอน)
+> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[networkchuck-bash-scripting|เปิดไฟล์โน้ต: phase-a-foundations/notes/networkchuck-bash-scripting.md]]
+
 1. [you need to learn BASH Scripting RIGHT NOW!! (EP 1)](https://www.youtube.com/watch?v=SPwyp2NG-bE) — เข้าใจ Shebang (`#!/bin/bash`), Permissions (`chmod +x`), สคริปต์แรก
 2. [BASH scripting will change your life (EP 2)](https://www.youtube.com/watch?v=7qd5sqazD7k) — Variables, รับค่า User Input (`read`), Arguments (`$1`, `$@`) ทำ Coffee Bot
 3. [this BASH script will make you a MILLIONAIRE (EP 3)](https://www.youtube.com/watch?v=19nN9vgcgmU) — System Environment Variables, `$RANDOM`, การคำนวณเลขคณิต
@@ -320,6 +324,7 @@ flowchart LR
 5. [a BASH script PUSH-UP counter (for #gains ) (EP 5)](https://www.youtube.com/watch?v=nW9M0MQinfg) — Loops (`while`, `until`, `for`) ทำโปรแกรม Push-up Counter
 
 ##### 1.3 David Bombal + OccupyTheWeb — Linux Basics for Hackers (6 ตอนระดับ Internals)
+> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-linux-basics-otw|เปิดไฟล์โน้ต: phase-a-foundations/notes/bombal-linux-basics-otw.md]]
 1. [Linux for Hackers Tutorial (And Free Courses) // EP 1](https://www.youtube.com/watch?v=YJUVNlmIO6E) — ปรัชญาแฮกเกอร์กับ Linux จาก OTW
 2. [Linux for Hackers Tutorial with OTW! (Episode 2)](https://www.youtube.com/watch?v=8z-s5KQ9DbI) — สถาปัตยกรรมระบบไฟล์เชิงลึก
 3. [Linux Networking that you need to know (Episode 3)](https://www.youtube.com/watch?v=t96iOUxC27M) — Network interfaces, Routing table, DNS config
@@ -347,6 +352,7 @@ flowchart LR
 #### 🎬 Phase 2 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
 ##### 2.1 NetworkChuck — Networking & Subnetting
+> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-networkchuck-networking|เปิดไฟล์โน้ต: phase-a-foundations/notes/bombal-networkchuck-networking.md]]
 1. [what is an IP Address? // You SUCK at Subnetting // EP 1](https://www.youtube.com/watch?v=5WfiTHiU4x8) — หัวใจของ IP Addressing และ Subnet Mask
 2. [What is a SWITCH? // FREE CCNA // Day 1](https://www.youtube.com/watch?v=9eH16Fxeb9o) — Layer 2 Data Link, MAC Address Table, Broadcast Domain
 3. [What is a ROUTER? // FREE CCNA // EP 2](https://www.youtube.com/watch?v=p9ScLm9S3B4) — Layer 3 Network, IP Routing, Default Gateway
