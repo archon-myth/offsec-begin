@@ -19,7 +19,7 @@ Binary Exploitation · Cloud Security · Active Directory & Red Teaming · Threa
 
 | Phase | Focus | Duration | Status |
 | :---: | :--- | :---: | :---: |
-| **0** | **Setup & Mindset** | Month 1 | 🔄 **In Progress (60%)** |
+| **0** | **Setup & Mindset** | Month 1 | 🔄 **In Progress (50%)** |
 | **A** | **Core Foundations** | Month 2–3 | ⏳ Upcoming |
 | **B** | **Scripting & Recon** | Month 4–5 | ⏳ Upcoming |
 | **C** | **Web Pentesting** | Month 6–8 | ⏳ Upcoming |
@@ -48,7 +48,7 @@ offsec-begin/
 ├── phase-g-portfolio/      ← reports/ notes/
 ├── phase-h-internship/
 ├── certs/                  ← ejpt/ pnpt/ crto/ oscp/
-├── resources/              ← Master curriculum (David Bombal vs NetworkChuck), cheatsheets
+├── resources/              ← reference guides, cheatsheets & tooling assets
 └── templates/              ← standardized writeup & reporting templates (S.P.E.A.R. doctrine)
 ```
 
@@ -56,12 +56,13 @@ offsec-begin/
 
 ## Certifications Target
 
-| Cert | Target |
-| :--- | :--- |
-| **eJPT** | Month 10 |
-| **CRTO** | Month 17 |
-| **PNPT** | Month 17 |
-| **OSCP** | Month 22 |
+| Cert | Target Window |
+| :--- | :---: |
+| **eJPT** (eLearnSecurity Junior Pentester) | Month 8–10 |
+| **AWS SAA** (Solutions Architect Associate) | Month 11–12 |
+| **PNPT** (Practical Network Pentester) | Month 13–16 |
+| **CRTO** (Certified Red Team Operator) | Month 19–21 |
+| **OSCP** (OffSec Certified Professional) | Month 22–24 |
 
 ---
 
