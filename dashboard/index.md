@@ -5,8 +5,8 @@
 ## 🎯 Current Mission Status (Phase 0 — Setup Complete: 50%)
 
 > [!TIP]
-> **Active Focus:** Phase 0 — Setup & Mindset (Month 1 · พ.ย. 2569)  
-> **Progress:** [█████░░░░░] 50% (Lab Setup Complete · Theory & Laws Pending)  
+> **Active Focus:** Phase 0 — Setup & Mindset (Month 1)  
+> **Progress:** [█████░░░░░] 50% (Lab Setup Complete · Theory & Legal Framework Pending)  
 > **Status:** 🔄 **In Progress** | **Last Updated:** 2026-11-08  
 > **Full Tracker Details:** [[phase-tracker|เปิดดูตาราง Phase Tracker แบบละเอียด]]  
 >  
@@ -16,10 +16,9 @@
 > - ระบบ Shared Clipboard และ Drag-and-Drop ใช้งานได้ทั้ง 2 ทิศทาง  
 > - เอกสารคู่มือระบบปฏิบัติการ: [[phase-0-setup/notes/Setup-VirtualBox|Setup-VirtualBox]] และ [[phase-0-setup/notes/Setup-HybridSSD|Setup-HybridSSD]]  
 >  
-> **⏳ 2. ทฤษฎีและกรอบปฏิบัติการ (Next Actions — รอศึกษาต่อยอด):**  
-> - เริ่มศึกษาทฤษฎีตาม [[resources/foundations-execution-blueprint|Master Curriculum Blueprint]]  
-> - เปิดสมุดเล่มแรกพร้อมจด: [[phase-a-foundations/notes/linux-fundamentals|linux-fundamentals]]  
-> - เนื้อหา TryHackMe Pre-Security, พ.ร.บ. คอมพิวเตอร์ และ Mindset จะบันทึกเมื่อลงสนามจริง
+> **⏳ 2. ทฤษฎีและกรอบปฏิบัติการ (Next Actions — กำลังดำเนินการ):**  
+> - เริ่มต้นบันทึกเนื้อหาลงในสมุดเล่มแรก: [[phase-a-foundations/notes/linux-fundamentals|linux-fundamentals]]  
+> - ศึกษากรอบ พ.ร.บ. คอมพิวเตอร์ และจริยธรรมควบคู่กับการทดลองบน Lab
 
 ---
 
@@ -28,7 +27,6 @@
 | File / Folder | Description & Direct Link |
 | :--- | :--- |
 | **Phase Tracker** | [[phase-tracker|phase-tracker.md]] — ความคืบหน้าระดับ Phase, เปอร์เซ็นต์, และ KPI Gates |
-| **Master Curriculum** | [[resources/foundations-execution-blueprint|foundations-execution-blueprint.md]] — แผนที่เรียนรู้และสารบัญคลิปทั้งหมด |
 | **Bug Bounty Log** | [[bug-bounty-log|bug-bounty-log.md]] — บันทึกผลการล่าช่องโหว่และ Bug Bounty |
 | **All Templates** | [[templates/template-lab-writeup|templates/]] — 7 แม่แบบรายงานและบันทึกแล็บมาตรฐาน S.P.E.A.R. |
 
@@ -50,18 +48,15 @@
 
 ---
 
-## 📜 Certification Target Milestones (Aligned with SUT Graduation Timeline)
+## 📜 Certification Target Milestones
 
-> อ้างอิงไทม์ไลน์แม่บท: [timeline-sut-graduation-licenses-2570-2574.md](file:///A:/ARCHONOS/drop/misc/timeline-sut-graduation-licenses-2570-2574.md)
-
-| Target | Certification | Study Guide | Target Window (มทส. Timeline) | Strategic Role & SUT Milestone |
+| Target | Certification | Study Guide | Target Window | Core Competency & Milestone |
 | :---: | :--- | :--- | :---: | :--- |
-| 🥉 | **eJPT** (eLearnSecurity Junior Pentester) | [[certs/ejpt/study-guide\|eJPT Study Guide]] | **Month 8–10** (มิ.ย. – ส.ค. 2570) | **M1: ยื่นสมัครสหกิจ** (ดึงดูดบริษัท Security / กลางปี 2570) |
-| ☁️ | **AWS SAA** (Solutions Architect Associate) | *(Cloud Foundation)* | **Month 11–12** (ก.ย. – ต.ค. 2570) | **M2: ก่อนออกสหกิจ** (ทักษะ Cloud Pentest & Architecture) |
-| 🥈 | **PNPT** (Practical Network Pentester) | [[certs/pnpt/study-guide\|PNPT Study Guide]] | **Month 13–16** (พ.ย. 2570 – ก.พ. 2571) | **ช่วงปฏิบัติงานสหกิจ** (มาตรฐาน Pentest ในองค์กรจริง) |
-| 🎓 | **มทส. อนุมัติสำเร็จการศึกษา** | *(Bachelor of Computer Eng.)* | **Month 17–18** (มี.ค. – เม.ย. 2571) | **M3: จบ ป.ตรี** (อนุมัติจบ + Full Licenses ทันที) |
-| 🥈 | **CRTO** (Certified Red Team Operator) | [[certs/crto/study-guide\|CRTO Study Guide]] | **Month 19–21** (พ.ค. – ก.ค. 2571) | **พนักงานประจำ ปี 1** (Active Directory & C2 Tradecraft) |
-| 🥇 | **OSCP** (OffSec Certified Professional) | [[certs/oscp/study-guide\|OSCP Study Guide]] | **Month 22–24** (ส.ค. – ต.ค. 2571) | **พนักงานประจำ ปี 1–2** (บริษัทสนับสนุนค่าสอบ ~,499) |
+| 🥉 | **eJPT** (eLearnSecurity Junior Pentester) | [[certs/ejpt/study-guide\|eJPT Study Guide]] | **Month 8–10** | Junior Pentester Baseline · Practical Network Penetration Testing |
+| ☁️ | **AWS SAA** (Solutions Architect Associate) | *(Cloud Architecture)* | **Month 11–12** | Cloud Infrastructure Security & Offensive Cloud Foundations |
+| 🥈 | **PNPT** (Practical Network Pentester) | [[certs/pnpt/study-guide\|PNPT Study Guide]] | **Month 13–16** | Practical Network Pentesting · Real-world Enterprise Engagement |
+| 🥈 | **CRTO** (Certified Red Team Operator) | [[certs/crto/study-guide\|CRTO Study Guide]] | **Month 19–21** | Active Directory Attacks, C2 Operations & Evasion Tradecraft |
+| 🥇 | **OSCP** (OffSec Certified Professional) | [[certs/oscp/study-guide\|OSCP Study Guide]] | **Month 22–24** | Advanced Hands-on Penetration Testing · Industry Gold Standard |
 
 ---
 
