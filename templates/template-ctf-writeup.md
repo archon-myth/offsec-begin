@@ -1,4 +1,3 @@
-<!-- SYNCED COPY - master lives in ARCHONOS drop/templates/. Do not edit here; edit master and re-sync. -->
 
 ---
 title: CTF Challenge Writeup Template (per-challenge, category-tagged — Annotated + Tailorable)
@@ -245,4 +244,4 @@ usage: >
 *Template author: S.P.E.A.R. — offensive-execution tradecraft.
 Companions: `drop/templates/template-lab-writeup.md` (full box), `drop/templates/template-pentest-report.md`
 (professional engagement). Feeds: the Architect's `A:\offsec-begin` writeups tree + spaced-repetition recall
-schedule. Master lives in ARCHONOS `drop/templates/`; filled instances land in the `offsec-begin` repo.*
+schedule. Master lives in Vault `drop/templates/`; filled instances land in the `offsec-begin` repo.*

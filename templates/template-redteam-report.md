@@ -1,4 +1,3 @@
-<!-- SYNCED COPY - master lives in ARCHONOS drop/templates/. Do not edit here; edit master and re-sync. -->
 
 ---
 title: Red-Team / Adversary-Emulation Engagement Report Template (Annotated + Tailorable)
@@ -24,7 +23,7 @@ scope_note: >
 variants: LITE (single objective / short assumed-breach) · FULL (multi-phase full-scope emulation)
 usage: >
   Copy this file → pick LITE or FULL → delete the grey annotation call-outs → fill the fields → attach
-  finding cards for the specific weaknesses exploited. Master lives in ARCHONOS drop/templates/; filled
+  finding cards for the specific weaknesses exploited. Standardized template; filled
   instances land in the offsec-begin repo. Authorized engagements only.
 ---
 
@@ -315,4 +314,4 @@ usage: >
 *Template author: S.P.E.A.R. — adversary-emulation reporting.
 Consumes scope + objective from PRISM (`template-requirements-offsec.md`); recon from
 `template-recon-checklist.md`; reuses finding cards from `template-vuln-finding.md`.
-Master lives in ARCHONOS `drop/templates/`; filled instances land in the `offsec-begin` repo.*
+Master lives in Vault `drop/templates/`; filled instances land in the `offsec-begin` repo.*

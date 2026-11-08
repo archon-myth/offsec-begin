@@ -1,7 +1,7 @@
 # ⚔️ offsec-begin
 
 > **Archon.Myth** — Offensive Security Journey | Phase Zero → Hero  
-> 22-Month Roadmap · Starting 2026 · Antigravity & ARCHONOS Ecosystem  
+> 22-Month Roadmap · Starting 2026 · Offensive Security Engineering Portfolio  
 
 ---
 

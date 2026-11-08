@@ -1,4 +1,3 @@
-<!-- SYNCED COPY - master lives in ARCHONOS drop/templates/. Do not edit here; edit master and re-sync. -->
 
 ---
 title: Recon & Enumeration Checklist Template (WSTG-informed — Annotated + Tailorable)
@@ -264,5 +263,5 @@ usage: >
 *Template author: S.P.E.A.R. — offensive-execution tradecraft.
 Companions: `drop/templates/template-lab-writeup.md`, `drop/templates/template-ctf-writeup.md`,
 `drop/templates/template-pentest-report.md`. Feeds: the recon section of every writeup + the Architect's
-`A:\offsec-begin` methodology notes. Master lives in ARCHONOS `drop/templates/`; filled instances land in the
+`A:\offsec-begin` methodology notes. Master lives in Vault `drop/templates/`; filled instances land in the
 `offsec-begin` repo.*

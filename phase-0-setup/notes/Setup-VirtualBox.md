@@ -1,9 +1,8 @@
 # Lab Environment Setup: Kali Linux & Windows 11 (VirtualBox)
 
 > **Repository:** `A:\offsec-begin` | **Vault:** Obsidian  
-> **Master Reference:** [A:\ARCHONOS\drop\setup\setup-kali-linux-baseline.md](file:///A:/ARCHONOS/drop/setup/setup-kali-linux-baseline.md)  
-> **Host OS:** Windows 11 | **Hypervisor:** Oracle VM VirtualBox 7.x  
-> **Lab Storage:** `E:\Active_Labs\` (MYTH_ORIGIN) | **Engine & Tools:** `D:\` (ARCHON_CORE)
+> **Environment:** Host Windows 11 | **Hypervisor:** Oracle VM VirtualBox 7.x  
+> **Lab Storage:** High-Performance NVMe SSD | **Engine & Tools:** Dedicated Security Storage
 
 ---
 
