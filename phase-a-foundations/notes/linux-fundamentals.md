@@ -158,45 +158,67 @@ sudo adduser newuser
 
 ### 💻 Essential Commands
 ```bash
-# === 1. คู่มือและการขอความช่วยเหลือเร่งด่วน (Manuals & Quick Help) ===
-man ls                          # เปิดคู่มือฉบับเต็มของคำสั่ง (กด q ออก, กด / เพื่อพิมพ์ค้นหาคำ)
-whatis nmap                     # ดูคำอธิบายสั้น ๆ บรรทัดเดียวว่าคำสั่งนี้คืออะไร
-apropos "network"               # ค้นหาคำสั่งที่เกี่ยวข้องจากคำค้นหา (เมื่อนึกชื่อคำสั่งไม่ออก)
-ls --help                       # แสดงคำอธิบายตัวเลือก (Option Cheatsheet) แบบละเอียดในหน้าจอ
-id -h 2>&1 | head -n 5          # ตัวอย่างการใช้ Flag ย่อ -h หรือ --help
+# เปิดคู่มือฉบับเต็มของคำสั่ง (กด q ออก, กด / เพื่อพิมพ์ค้นหาคำ)
+man ls
 
-# === 2. ตรวจสอบตำแหน่ง Binary และประเภทคำสั่ง (Binary Discovery) ===
-which python3                   # ดู Path ของ Binary ที่ถูกเรียกใช้งานจริงตาม $PATH
-whereis bash                    # แสดงตำแหน่งทั้ง Binary, Source Code และ Man page
-type cd                         # ตรวจสอบว่าเป็น Built-in ของ Shell หรือ External Binary
-type ls                         # ตรวจสอบว่าคำสั่งถูกครอบด้วย Alias หรือไม่
+# ดูคำอธิบายสั้น ๆ บรรทัดเดียวว่าคำสั่งนี้คืออะไร
+whatis nmap
 
-# === 3. สำรวจตัวตน สิทธิ์ และเครื่องเป้าหมาย (Identity & System Triage) ===
-id                              # ตรวจสอบ User ID (UID), Group ID (GID) และกลุ่มที่สังกัด (เช่นกลุ่ม sudo)
-who                             # แสดงรายชื่อผู้ใช้ที่กำลังล็อกอินอยู่ในระบบขณะนี้
-hostname                        # แสดงชื่อเครื่องของระบบคอมพิวเตอร์ปัจจุบัน
+# ค้นหาคำสั่งที่เกี่ยวข้องจากคำค้นหา (เมื่อนึกชื่อคำสั่งไม่ออก)
+apropos "network"
 
-# === 4. ตรวจสอบสถาปัตยกรรมและเวอร์ชัน Kernel (Kernel Fingerprinting) ===
-uname                           # แสดงชื่อระบบปฏิบัติการ (Linux)
-uname -r                        # แสดงรุ่น Kernel Release (สำคัญมากในการค้นหา Kernel Exploit ยกระดับสิทธิ์)
-uname -a                        # แสดงข้อมูลระบบแบบสมบูรณ์ (OS, Hostname, Kernel, วันที่ Build, สถาปัตยกรรม CPU)
+# แสดงคำอธิบายตัวเลือก (Option Cheatsheet) แบบละเอียดในหน้าจอ
+ls --help
+id -h 2>&1 | head -n 5          # ตัวอย่างการใช้ Flag ย่อ -h
 
-# === 5. สำรวจเครือข่ายและการเชื่อมต่อ (Network & Socket Reconnaissance) ===
-ifconfig                        # ตรวจสอบ IP Address และ Interface (คำสั่งคลาสสิกจากชุด net-tools)
-ip a                            # ตรวจสอบ IP Address และ Interface (คำสั่งมาตรฐานสมัยใหม่จากชุด iproute2)
-netstat -tulpn                  # ตรวจสอบพอร์ตและเซอร์วิสที่เปิดรับการเชื่อมต่อ (Listening Ports)
-ss -tulpn                       # Socket Statistics (ทำงานเร็วกว่า netstat นิยมใช้เป็นหลักในปัจจุบัน)
+# ดู Path ของ Binary ที่ถูกเรียกใช้งานจริงตาม $PATH
+which python3
 
-# === 6. สำรวจฮาร์ดแวร์ อุปกรณ์จัดเก็บ และไฟล์ที่เปิดอยู่ (Hardware & Storage) ===
-lsblk                           # แสดงโครงสร้าง Block Devices (ฮาร์ดดิสก์, SSD, พาร์ติชัน, จุดเมานต์)
-lsusb                           # แสดงรายการอุปกรณ์ USB ทั้งหมดที่เชื่อมต่อกับเครื่อง
-lsof                            # แสดงไฟล์ทั้งหมดที่กำลังถูกเปิดใช้งาน (List Open Files — ยืนยันแนวคิด Everything is a file)
-env                             # แสดงตัวแปรสภาพแวดล้อมทั้งหมด (Environment Variables — จุดหา Password/API Keys)
+# แสดงตำแหน่งทั้ง Binary, Source Code และ Man page
+whereis bash
 
-# === 7. ตรวจสอบ Process ที่กำลังทำงาน (Process Status) ===
+# ตรวจสอบว่าเป็น Built-in ของ Shell หรือ External Binary
+type cd
+type ls
+
+# ตรวจสอบ User ID (UID), Group ID (GID) และกลุ่มที่สังกัด
+id
+
+# แสดงรายชื่อผู้ใช้ที่กำลังล็อกอินอยู่ในระบบขณะนี้
+who
+
+# แสดงชื่อเครื่องของระบบคอมพิวเตอร์ปัจจุบัน
+hostname
+
+# ตรวจสอบสถาปัตยกรรมและเวอร์ชัน Kernel
+uname
+uname -r                        # แสดงรุ่น Kernel Release (สำคัญมากในการหา Kernel Exploit)
+uname -a                        # แสดงข้อมูลระบบแบบสมบูรณ์
+
+# สำรวจเครือข่ายและ Network Interface (เปรียบเทียบคำสั่งเก่า vs ใหม่)
+ifconfig                        # ตรวจสอบ IP Address (คำสั่งคลาสสิกจากชุด net-tools)
+ip a                            # ตรวจสอบ IP Address (คำสั่งมาตรฐานสมัยใหม่จากชุด iproute2)
+
+# สำรวจพอร์ตและเซอร์วิสที่เปิดรับการเชื่อมต่อ (Listening Ports)
+netstat -tulpn                  # ตรวจสอบพอร์ต (คำสั่งคลาสสิก)
+ss -tulpn                       # Socket Statistics (คำสั่งมาตรฐานสมัยใหม่)
+
+# แสดงโครงสร้าง Block Devices (ฮาร์ดดิสก์, SSD, พาร์ติชัน, จุดเมานต์)
+lsblk
+
+# แสดงรายการอุปกรณ์ USB ทั้งหมดที่เชื่อมต่อกับเครื่อง
+lsusb
+
+# แสดงไฟล์ทั้งหมดที่กำลังถูกเปิดใช้งาน (List Open Files)
+lsof
+
+# แสดงตัวแปรสภาพแวดล้อมทั้งหมด (Environment Variables)
+env
+
+# ตรวจสอบ Process ที่กำลังทำงานในระบบ (Process Status)
 ps                              # ดู Process ที่รันอยู่ใน Terminal Session ปัจจุบัน
-ps aux                          # ส่องทุก Process ในระบบแบบละเอียด (BSD Style — นิยมใช้มากที่สุด)
-ps -ef                          # ส่องทุก Process พร้อมระบุ Parent PID (PPID) (Unix/POSIX Style)
+ps aux                          # ส่องทุก Process ในระบบแบบละเอียด (BSD Style)
+ps -ef                          # ส่องทุก Process พร้อมระบุ Parent PID (PPID) (Unix Style)
 ```
 
 ### 🧠 Feynman Takeaway & Reflection
