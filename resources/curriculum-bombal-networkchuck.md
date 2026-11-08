@@ -387,20 +387,20 @@ flowchart LR
 
 #### 🎬 Phase 3 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
-##### 3.1 NetworkChuck — Reconnaissance & Nmap
+##### 3.1 NetworkChuck — Reconnaissance & Nmap\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-networkchuck-nmap-and-recon|เปิดไฟล์โน้ต: phase-b-scripting/notes/bombal-networkchuck-nmap-and-recon.md]]
 1. [Nmap Tutorial to find Network Vulnerabilities](https://www.youtube.com/watch?v=4t4kBkMsDbQ) — คู่มือ Nmap สำหรับค้นหาช่องโหว่บนระบบ
 2. [you need to learn HACKING RIGHT NOW!! // CEH](https://www.youtube.com/watch?v=yFC8pb2TPdc) — ภาพรวมขั้นตอนการทำ Ethical Hacking และ Footprinting
 3. [Google HACKING (use google search to HACK!)](https://www.youtube.com/watch?v=hrVa_dhD-iA) — การทำ OSINT และ Google Dorking ค้นหาข้อมูลรั่วไหล
 
-##### 3.2 NetworkChuck — Reverse Shells & Wireless
+##### 3.2 NetworkChuck — Reverse Shells & Wireless\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-networkchuck-shells-and-metasploit|เปิดไฟล์โน้ต: phase-b-scripting/notes/bombal-networkchuck-shells-and-metasploit.md]]
 1. [how to get remote access to your hacking targets // reverse shells with netcat](https://www.youtube.com/watch?v=bXCeFPNWjsM) — กลไก Reverse Shell ด้วย Netcat
 2. [3 Levels of WiFi Hacking (Noob vs Hipster vs Pro)](https://www.youtube.com/watch?v=Ck7wB7pdebQ) — ภาพรวมการโจมตีระบบเครือข่ายไร้สาย 3 รูปแบบ
 
-##### 3.3 David Bombal — Metasploit Framework
+##### 3.3 David Bombal — Metasploit Framework\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-networkchuck-shells-and-metasploit|เปิดไฟล์โน้ต: phase-b-scripting/notes/bombal-networkchuck-shells-and-metasploit.md]]
 1. [Unleashing Metasploit: The Comprehensive Toolkit](https://www.youtube.com/watch?v=GxkKszPVD1M) — เจาะลึก Metasploit Modules, Payloads และ Meterpreter
 2. [Kali Linux: Hacking Networks Part 1](https://www.youtube.com/watch?v=K1bMSPje6pw) — เทคนิคการสแกนและเตรียมการโจมตีเครือข่าย
 
-##### 3.4 David Bombal — Web Testing & Kali Arsenal
+##### 3.4 David Bombal — Web Testing & Kali Arsenal\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-networkchuck-nmap-and-recon|เปิดไฟล์โน้ต: phase-b-scripting/notes/bombal-networkchuck-nmap-and-recon.md]]
 1. [Burp Suite Tutorial for Beginners](https://www.youtube.com/watch?v=-CLE7ndoUqE) — ตั้งค่า FoxyProxy, Intercept Request, และใช้งาน Repeater
 2. [hydra (Online Password Brute-forcing)](https://www.youtube.com/watch?v=3_f-SWQP3x0) — การยิง Brute-force รหัสผ่าน SSH/FTP/Web ด้วย Hydra
 
@@ -419,20 +419,20 @@ flowchart LR
 
 #### 🎬 Phase 4 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
-##### 4.1 David Bombal — Hashcat Core Mastery
+##### 4.1 David Bombal — Hashcat Core Mastery\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-hashcat-cracking-mastery|เปิดไฟล์โน้ต: phase-b-scripting/notes/bombal-hashcat-cracking-mastery.md]]
 1. [Advanced Bruteforce WiFi WPA2 cracking with GPU and Hashcat](https://www.youtube.com/watch?v=yvNKuZqRmJ4) — การใช้ GPU Compute แคร็กรหัสผ่านความเร็วสูง
 2. [WiFi WPA/WPA2 vs hashcat and hcxdumptool](https://www.youtube.com/watch?v=Usw0IlGbkC4) — กระบวนการสกัดและแปลงไฟล์แคปเจอร์
 3. [Bruteforce WiFi WPA2 with GPU](https://www.youtube.com/watch?v=b5zQ6xTQGfY) — เทคนิคการสร้าง Wordlists และ Mask
 
-##### 4.2 David Bombal — WPA2/WPA3 Mode 22000 & Cloud Cracking
+##### 4.2 David Bombal — WPA2/WPA3 Mode 22000 & Cloud Cracking\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-hashcat-cracking-mastery|เปิดไฟล์โน้ต: phase-b-scripting/notes/bombal-hashcat-cracking-mastery.md]]
 1. [16 secs to break it! WPA2 WiFi cracking with Hashcat mode 22000](https://www.youtube.com/watch?v=ZTIB9Ki9VtY) — การโจมตี PMKID สมัยใหม่โดยไม่ต้องรอ Client ต่อ Wi-Fi
 2. [Break WiFi networks using Cloud GPUs in seconds](https://www.youtube.com/watch?v=KupkzhM4z4Y) — รัน Hashcat บน Cloud instances (NVIDIA CUDA)
 
-##### 4.3 NetworkChuck — Active Directory Architecture
+##### 4.3 NetworkChuck — Active Directory Architecture\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[active-directory-attacks|เปิดไฟล์โน้ต: phase-f-redteam/notes/active-directory-attacks.md]]
 1. [Learn Microsoft Active Directory (ADDS) in 30mins](https://www.youtube.com/watch?v=85-bp7XxWDQ) — โครงสร้าง Windows Domain, OUs, Group Policies
 2. [Windows Server 2022 Introduction to Active Directory](https://www.youtube.com/watch?v=yAZEQmaCqEM) — การติดตั้ง Domain Controller สำหรับ Home Lab
 
-##### 4.4 David Bombal — Hak5 Hardware & BadUSB
+##### 4.4 David Bombal — Hak5 Hardware & BadUSB\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[bombal-hardware-badusb|เปิดไฟล์โน้ต: phase-b-scripting/notes/bombal-hardware-badusb.md]]
 1. [Hacking Gadgets Every Cybersecurity Pro Should Know (feat. Darren Kitchen)](https://www.youtube.com/watch?v=6ckvxEQEBn8) — สัมภาษณ์ทีม Hak5 เจาะลึกอุปกรณ์ทุกประเภท
 2. [Hak5 Rubber Ducky Demos (Disable Defender, Encrypt files)](https://www.youtube.com/watch?v=kFB69SywIKc) — สาธิต Keystroke Injection ผ่าน USB Rubber Ducky
 3. [This dangerous USB can hack your computer in seconds!](https://www.youtube.com/watch?v=3yiT_WMlosg) — อันตรายของ Hot-plug hardware attacks
@@ -451,16 +451,16 @@ flowchart LR
 
 #### 🎬 Phase 5 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
-##### 5.1 David Bombal — Security Architecture & Certifications
+##### 5.1 David Bombal — Security Architecture & Certifications\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[certs/ejpt/study-guide|eJPT Guide]] · [[certs/oscp/study-guide|OSCP Guide]]
 1. [Cybersecurity hacking path](https://www.youtube.com/watch?v=yq561bLg10A) — วิเคราะห์เส้นทางการเติบโตและใบรับรองสาย Security
 2. [Do you need a Cybersecurity home lab?](https://www.youtube.com/watch?v=fffSbCbafts) — การจัดสรรทรัพยากรสำหรับการฝึกฝนระยะยาว
 
-##### 5.2 NetworkChuck — Mindset & Progression
+##### 5.2 NetworkChuck — Mindset & Progression\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[mindset-and-ethics|เปิดไฟล์โน้ต: phase-0-setup/notes/mindset-and-ethics.md]]
 1. [the hacker's roadmap (how to get started in IT)](https://www.youtube.com/watch?v=5xWnmUEi1Qw) — แผนที่การก้าวจากศูนย์สู่วงการไอทีและความปลอดภัย
 2. [this year....I'm going to become a HACKER!!](https://www.youtube.com/watch?v=bTPpKxuV-CY) — การตั้งเป้าหมายและการเอาชนะความกลัว
 3. [Can I really become an Ethical Hacker?](https://www.youtube.com/watch?v=qvlZrtKXdx4) — ปรับทัศนคติเมื่อเผชิญกับเนื้อหาที่ยาก
 
-##### 5.3 David Bombal — Industry Masters
+##### 5.3 David Bombal — Industry Masters\n> 📝 **โน้ตบันทึกคำสั่งและบทเรียน:** [[interview-readiness-and-scenarios|เปิดไฟล์โน้ต: phase-h-internship/notes/interview-readiness-and-scenarios.md]]
 1. [2022 Cybersecurity roadmap: How to get started? (feat. John Hammond)](https://www.youtube.com/watch?v=mS7qWC3CbOU) — คำแนะนำจาก John Hammond เรื่อง CTF และการสร้างผลงาน
 2. [Ex-NSA hacker tells us how to get into hacking!](https://www.youtube.com/watch?v=SFbV7sTSAlA) — มาตรฐานฝีมือของแฮกเกอร์ระดับรัฐบาล
 
