@@ -68,18 +68,18 @@ clear
 - **Core Concept:** ผ่าโครงสร้างระบบไฟล์ของ Linux ทุกสิ่งทุกอย่างใน Linux คือ 'ไฟล์' (Everything is a file — แม้กระทั่ง Hardware, Process, และ Network Socket)
 
 ### 📝 Directory Hierarchy Reference
-| Directory | Purpose / Typical Contents | OffSec Relevance |
-| :--- | :--- | :--- |
-| `/` | Root ของระบบไฟล์ทั้งหมด (จุดเริ่มต้นของทุก Path) | ฐานทัพหลักของระบบ |
-| `/bin`, `/usr/bin` | เก็บ Binary คำสั่งมาตรฐานของระบบ (`ls`, `cat`, `grep`, `bash`) | แหล่งหา Living off the Land Binaries (LOLBins) |
-| `/sbin`, `/usr/sbin` | เก็บ Binary สำหรับผู้ดูแลระบบ (System Admin binaries: `iptables`, `fdisk`) | คำสั่งยกระดับสิทธิ์ |
-| `/etc` | เก็บไฟล์การตั้งค่าระบบ (Configuration files) | จุดล่า Password hashes (`/etc/shadow`), User list (`/etc/passwd`) |
-| `/home` | พื้นที่จัดเก็บไฟล์ส่วนตัวของ User ทั่วไป (`/home/username`) | จุดหาข้อมูล Credential, ประวัติคำสั่ง `.bash_history` |
-| `/root` | Home directory ของผู้ใช้สิทธิ์สูงสุด (Root user) | Crown Jewel — เป้าหมายสุดท้ายของการยึดเครื่อง |
-| `/var` | เก็บข้อมูลที่เปลี่ยนแปลงตลอดเวลา เช่น Logs (`/var/log`), เว็บไซต์ (`/var/www/html`) | แหล่งตรวจ Log หลบหนีร่องรอย หรือวาง Web Shell |
-| `/tmp` | เก็บไฟล์ชั่วคราว ทุกคนเขียนได้ (`rwxrwxrwt`) | จุดยอดนิยมสำหรับดร็อป Exploit / Payload ในการยกระดับสิทธิ์ |
-| `/dev` | เก็บ Device files ของฮาร์ดแวร์ (`/dev/sda`, `/dev/urandom`, `/dev/null`) | อ้างอิง Raw disk หรือสร้าง Random seed |
-| `/proc`, `/sys` | Virtual Filesystem ใน Memory ส่องดูสถานะ Kernel และ Processes | แหล่งอ่านข้อมูลระบบสด ๆ เช่น `/proc/version`, `/proc/cpuinfo` |
+| Directory            | Purpose / Typical Contents                                                          | OffSec Relevance                                                  |
+| :------------------- | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
+| `/`                  | Root ของระบบไฟล์ทั้งหมด (จุดเริ่มต้นของทุก Path)                                    | ฐานทัพหลักของระบบ                                                 |
+| `/bin`, `/usr/bin`   | เก็บ Binary คำสั่งมาตรฐานของระบบ (`ls`, `cat`, `grep`, `bash`)                      | แหล่งหา Living off the Land Binaries (LOLBins)                    |
+| `/sbin`, `/usr/sbin` | เก็บ Binary สำหรับผู้ดูแลระบบ (System Admin binaries: `iptables`, `fdisk`)          | คำสั่งยกระดับสิทธิ์                                               |
+| `/etc`               | เก็บไฟล์การตั้งค่าระบบ (Configuration files)                                        | จุดล่า Password hashes (`/etc/shadow`), User list (`/etc/passwd`) |
+| `/home`              | พื้นที่จัดเก็บไฟล์ส่วนตัวของ User ทั่วไป (`/home/username`)                         | จุดหาข้อมูล Credential, ประวัติคำสั่ง `.bash_history`             |
+| `/root`              | Home directory ของผู้ใช้สิทธิ์สูงสุด (Root user)                                    | Crown Jewel — เป้าหมายสุดท้ายของการยึดเครื่อง                     |
+| `/var`               | เก็บข้อมูลที่เปลี่ยนแปลงตลอดเวลา เช่น Logs (`/var/log`), เว็บไซต์ (`/var/www/html`) | แหล่งตรวจ Log หลบหนีร่องรอย หรือวาง Web Shell                     |
+| `/tmp`               | เก็บไฟล์ชั่วคราว ทุกคนเขียนได้ (`rwxrwxrwt`)                                        | จุดยอดนิยมสำหรับดร็อป Exploit / Payload ในการยกระดับสิทธิ์        |
+| `/dev`               | เก็บ Device files ของฮาร์ดแวร์ (`/dev/sda`, `/dev/urandom`, `/dev/null`)            | อ้างอิง Raw disk หรือสร้าง Random seed                            |
+| `/proc`, `/sys`      | Virtual Filesystem ใน Memory ส่องดูสถานะ Kernel และ Processes                       | แหล่งอ่านข้อมูลระบบสด ๆ เช่น `/proc/version`, `/proc/cpuinfo`     |
 
 ### 💻 Essential Commands
 ```bash
@@ -100,6 +100,12 @@ touch ~/lab/test_dir/note.txt
 cat ~/lab/test_dir/note.txt
 cat -n /etc/issue               # แสดงเนื้อหาพร้อมกำกับหมายเลขบรรทัด (-n)
 cat /etc/os-release             # เปิดอ่านข้อมูล OS ประจำเครื่อง (Reconnaissance พื้นฐาน)
+
+# สำรวจการตั้งค่าเครือข่ายใน /etc (Network Configuration)
+# ข้อควรจำ: /etc/network เป็น Directory (หากพิมพ์ cat /etc/network ระบบจะแจ้งว่า "Is a directory")
+cat /etc/network/interfaces     # เปิดอ่านไฟล์กำหนดค่า IP / Network Interfaces ในเครื่อง Debian/Kali
+cat /etc/resolv.conf            # เปิดอ่านการตั้งค่า DNS Nameserver ที่เครื่องใช้อยู่
+cat /etc/hosts                  # เปิดอ่านรายการจับคู่ IP กับ Domain ภายในเครื่อง (Local Hostname)
 
 # ย้ายและเปลี่ยนชื่อไฟล์
 mv ~/lab/test_dir/note.txt ~/lab/test_dir/targets.txt
