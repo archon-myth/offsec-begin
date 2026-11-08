@@ -153,6 +153,7 @@ sudo adduser newuser
   - Section 5: File Formats (`man 5 passwd`)
   - Section 8: System Administration (`man 8 useradd`)
 - เมื่อไม่มี `man` ให้ลอง `--help` หรือ `-h` สำหรับ Quick Option Cheatsheet
+- การอ่านคู่มือคำสั่ง `ps` (`man ps`): ตัวอย่างคลาสสิกของคำสั่งที่มี 2 ไวยากรณ์ คือ Unix/POSIX Style (มีขีด เช่น `ps -ef`) และ BSD Style (ไม่มีขีด เช่น `ps aux`)
 
 ### 💻 Essential Commands
 ```bash
@@ -173,6 +174,11 @@ whereis bash
 # ตรวจสอบว่าเป็น Built-in command หรือ External binary
 type cd
 type ls
+
+# ตรวจสอบสถานะ Process ที่กำลังทำงานในระบบ (Process Status)
+ps                              # ดู Process ที่รันอยู่ใน Terminal Session ปัจจุบัน
+ps aux                          # ส่องทุก Process ในระบบแบบละเอียด (BSD Style — นิยมใช้มากที่สุด)
+ps -ef                          # ส่องทุก Process พร้อมระบุ Parent PID (PPID) (Unix/POSIX Style)
 ```
 
 ### 🧠 Feynman Takeaway & Reflection
