@@ -390,7 +390,7 @@ flowchart LR
 #### 🎬 Phase 3 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
 ##### 3.1 NetworkChuck — Reconnaissance & Nmap
-> 📝 **บันทึกโน้ตที่ไฟล์:** [network-recon-and-nmap.md](file:///A:/offsec-begin/phase-b-scripting/notes/network-recon-and-nmap.md) *(ใน Obsidian: `[[network-recon-and-nmap]]`)*\n1. [Nmap Tutorial to find Network Vulnerabilities](https://www.youtube.com/watch?v=4t4kBkMsDbQ) — คู่มือ Nmap สำหรับค้นหาช่องโหว่บนระบบ
+> 📝 **บันทึกโน้ตที่ไฟล์:** [recon-automation.md](file:///A:/offsec-begin/phase-b-scripting/notes/recon-automation.md) *(ใน Obsidian: `[[recon-automation]]`)*\n1. [Nmap Tutorial to find Network Vulnerabilities](https://www.youtube.com/watch?v=4t4kBkMsDbQ) — คู่มือ Nmap สำหรับค้นหาช่องโหว่บนระบบ
 2. [you need to learn HACKING RIGHT NOW!! // CEH](https://www.youtube.com/watch?v=yFC8pb2TPdc) — ภาพรวมขั้นตอนการทำ Ethical Hacking และ Footprinting
 3. [Google HACKING (use google search to HACK!)](https://www.youtube.com/watch?v=hrVa_dhD-iA) — การทำ OSINT และ Google Dorking ค้นหาข้อมูลรั่วไหล
 
@@ -403,7 +403,7 @@ flowchart LR
 2. [Kali Linux: Hacking Networks Part 1](https://www.youtube.com/watch?v=K1bMSPje6pw) — เทคนิคการสแกนและเตรียมการโจมตีเครือข่าย
 
 ##### 3.4 David Bombal — Web Testing & Kali Arsenal
-> 📝 **บันทึกโน้ตที่ไฟล์:** [network-recon-and-nmap.md](file:///A:/offsec-begin/phase-b-scripting/notes/network-recon-and-nmap.md#34-david-bombal--web-testing--kali-arsenal) *(ใน Obsidian: `[[network-recon-and-nmap#3.4]]`)*\n1. [Burp Suite Tutorial for Beginners](https://www.youtube.com/watch?v=-CLE7ndoUqE) — ตั้งค่า FoxyProxy, Intercept Request, และใช้งาน Repeater
+> 📝 **บันทึกโน้ตที่ไฟล์:** [recon-automation.md](file:///A:/offsec-begin/phase-b-scripting/notes/recon-automation.md#34-david-bombal--web-testing--kali-arsenal) *(ใน Obsidian: `[[recon-automation#3.4]]`)*\n1. [Burp Suite Tutorial for Beginners](https://www.youtube.com/watch?v=-CLE7ndoUqE) — ตั้งค่า FoxyProxy, Intercept Request, และใช้งาน Repeater
 2. [hydra (Online Password Brute-forcing)](https://www.youtube.com/watch?v=3_f-SWQP3x0) — การยิง Brute-force รหัสผ่าน SSH/FTP/Web ด้วย Hydra
 
 ---

@@ -1,6 +1,6 @@
 # 🛡️ TryHackMe: Pre-Security Learning Path Notes
 
-> **Phase:** [phase-a-foundations](../) | **Tags:** `#tryhackme` `#pre-security` `#foundations`  
+> **Phase:** [phase-0-setup](../) | **Tags:** `#tryhackme` `#pre-security` `#foundations`  
 > **Platform:** [TryHackMe Pre-Security Path](https://tryhackme.com/path/outline/pre-security)
 
 ---

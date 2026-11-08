@@ -26,3 +26,25 @@ nmap -p <open_ports> -sC -sV -oA scans/detailed_services <target>
 # 3. UDP Quick Sweep
 nmap -sU --top-ports 50 -oN scans/udp_top.txt <target>
 ```
+
+---
+
+## 3.1 & 3.4 Active Scanning & Service Enumeration (Nmap & Kali Arsenal)
+> **Curriculum Modules:** 3.1 Nmap Scanning & 3.4 Web Arsenal / Password Brute-force
+
+### 💻 Nmap Scanning Playbook
+```bash
+# ตรวจสอบพอร์ตแบบเร็วพิเศษ
+nmap -T4 -F <target_ip>
+
+# ตรวจสอบพอร์ตทั้งหมด 1-65535 พร้อม Service Version และ Default Scripts
+nmap -p- -sC -sV -oN scans/nmap_full.txt <target_ip>
+
+# ใช้ Nmap Scripting Engine (NSE) หมวดหาช่องโหว่
+nmap -p 80,443 --script vuln <target_ip>
+```
+
+### 💻 Web Testing & Brute-force Toolkit
+- **Gobuster:** `gobuster dir -u http://<target> -w /usr/share/wordlists/dirb/common.txt`
+- **Nikto:** `nikto -h http://<target>`
+- **Hydra:** `hydra -l admin -P /mnt/d/Security/Wordlists/rockyou.txt <target_ip> ssh`
