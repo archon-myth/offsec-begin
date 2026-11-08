@@ -68,18 +68,26 @@ clear
 - **Core Concept:** ผ่าโครงสร้างระบบไฟล์ของ Linux ทุกสิ่งทุกอย่างใน Linux คือ 'ไฟล์' (Everything is a file — แม้กระทั่ง Hardware, Process, และ Network Socket)
 
 ### 📝 Directory Hierarchy Reference
-| Directory            | Purpose / Typical Contents                                                          | OffSec Relevance                                                  |
-| :------------------- | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
-| `/`                  | Root ของระบบไฟล์ทั้งหมด (จุดเริ่มต้นของทุก Path)                                    | ฐานทัพหลักของระบบ                                                 |
-| `/bin`, `/usr/bin`   | เก็บ Binary คำสั่งมาตรฐานของระบบ (`ls`, `cat`, `grep`, `bash`)                      | แหล่งหา Living off the Land Binaries (LOLBins)                    |
-| `/sbin`, `/usr/sbin` | เก็บ Binary สำหรับผู้ดูแลระบบ (System Admin binaries: `iptables`, `fdisk`)          | คำสั่งยกระดับสิทธิ์                                               |
-| `/etc`               | เก็บไฟล์การตั้งค่าระบบ (Configuration files)                                        | จุดล่า Password hashes (`/etc/shadow`), User list (`/etc/passwd`) |
-| `/home`              | พื้นที่จัดเก็บไฟล์ส่วนตัวของ User ทั่วไป (`/home/username`)                         | จุดหาข้อมูล Credential, ประวัติคำสั่ง `.bash_history`             |
-| `/root`              | Home directory ของผู้ใช้สิทธิ์สูงสุด (Root user)                                    | Crown Jewel — เป้าหมายสุดท้ายของการยึดเครื่อง                     |
-| `/var`               | เก็บข้อมูลที่เปลี่ยนแปลงตลอดเวลา เช่น Logs (`/var/log`), เว็บไซต์ (`/var/www/html`) | แหล่งตรวจ Log หลบหนีร่องรอย หรือวาง Web Shell                     |
-| `/tmp`               | เก็บไฟล์ชั่วคราว ทุกคนเขียนได้ (`rwxrwxrwt`)                                        | จุดยอดนิยมสำหรับดร็อป Exploit / Payload ในการยกระดับสิทธิ์        |
-| `/dev`               | เก็บ Device files ของฮาร์ดแวร์ (`/dev/sda`, `/dev/urandom`, `/dev/null`)            | อ้างอิง Raw disk หรือสร้าง Random seed                            |
-| `/proc`, `/sys`      | Virtual Filesystem ใน Memory ส่องดูสถานะ Kernel และ Processes                       | แหล่งอ่านข้อมูลระบบสด ๆ เช่น `/proc/version`, `/proc/cpuinfo`     |
+| Directory | Purpose / Typical Contents | OffSec Relevance |
+| :--- | :--- | :--- |
+| `/` | Root ของระบบไฟล์ทั้งหมด (จุดเริ่มต้นของทุก Path) | ฐานทัพหลักของระบบ ทุกการโจมตีต้องเข้าใจ Absolute Path จากจุดนี้ |
+| `/bin`, `/usr/bin` | เก็บ Binary คำสั่งมาตรฐานของระบบ (`ls`, `cat`, `grep`, `bash`) | แหล่งหา Living off the Land Binaries (LOLBins) เพื่อหลบเลี่ยงการตรวจจับ |
+| `/sbin`, `/usr/sbin` | เก็บ Binary สำหรับผู้ดูแลระบบ (System Admin binaries: `iptables`, `fdisk`) | คำสั่งสำหรับบริหารจัดการและยกระดับสิทธิ์ |
+| `/etc` | เก็บไฟล์การตั้งค่าระบบ (Configuration files) | ขุมทรัพย์ข้อมูลลับ: Password hashes (`/etc/shadow`), รายชื่อผู้ใช้ (`/etc/passwd`), คอนฟิกเน็ตเวิร์ก |
+| `/home` | พื้นที่จัดเก็บไฟล์ส่วนตัวของ User ทั่วไป (`/home/username`) | จุดล่าไฟล์ Credential, กุญแจ SSH (`~/.ssh`), และประวัติคำสั่ง `.bash_history` |
+| `/root` | Home directory ของผู้ใช้สิทธิ์สูงสุด (Root user) | Crown Jewel — เป้าหมายสุดท้ายของการยึดครองระบบ |
+| `/boot` | ไฟล์ Bootloader, Kernel Images (`vmlinuz`), GRUB config | ส่องเวอร์ชัน Kernel หาช่องโหว่ หรือทำ Bootkit / แก้ไขพารามิเตอร์ Boot |
+| `/dev` | เก็บ Device files ของฮาร์ดแวร์ (`/dev/sda`, `/dev/urandom`, `/dev/null`) | อ้างอิง Raw Disk, สร้าง Payload จาก Random Byte, หรือทิ้ง Output ด้วย `> /dev/null 2>&1` |
+| `/lib`, `/lib64`, `/usr/lib` | Shared Libraries (`.so`) ที่ Binary ต่าง ๆ ต้องใช้รัน | จุดโจมตีประเภท Shared Object Hijacking / LD_PRELOAD Privilege Escalation |
+| `/mnt` | จุดเมานต์ชั่วคราวสำหรับไดรฟ์ภายนอกหรือ Network Shares (NFS, SMB) | ขุมทรัพย์หา Backup Files ที่ไม่ได้เข้ารหัส หรือ NFS Share ที่หลละหลวม (`no_root_squash`) |
+| `/media` | จุดเมานต์อัตโนมัติสำหรับ Removable Media (USB Thumbdrive, External SSD) | ตรวจสอบสื่อบันทึกข้อมูลภายนอกที่เสียบคาไว้, เป้าหมายขโมยข้อมูล (Data Exfiltration) |
+| `/opt` | เก็บซอฟต์แวร์บุคคลที่สาม (Third-party Add-on Software / Standalone Apps) | แหล่งส่องหา Custom Tools, ซอฟต์แวร์เฉพาะทางขององค์กรที่มีช่องโหว่ หรือ Hardcoded Secrets |
+| `/srv` | เก็บข้อมูลสำหรับ Service ที่ระบบให้บริการ (Site-specific data: Web, FTP) | ส่องหา Source Code ของ Web App, ฐานข้อมูล หรือ Assets ที่ระบบแชร์ออกมาภายนอก |
+| `/tmp` | เก็บไฟล์ชั่วคราว ทุกคนเขียนได้ (`rwxrwxrwt` - Sticky Bit) | พื้นที่ยอดนิยมสำหรับดร็อป Exploit, Reverse Shell Payloads, และ Compile โค้ด |
+| `/usr`, `/usr/share` | แหล่งรวม Binary รอง, คู่มือ (`man`), และ Shared Data Assets | บน Kali นี่คือคลังเครื่องมือ: Wordlists (`/usr/share/wordlists`), Nmap Scripts, Web Shells |
+| `/var` | ข้อมูลที่เปลี่ยนแปลงตลอดเวลา: Logs (`/var/log`), Spool, Web Root (`/var/www/html`) | แหล่งวิเคราะห์ Log แกะรอย/ลบร่องรอย และจุดวาง Web Shell บนเว็บเซิร์ฟเวอร์ |
+| `/proc`, `/sys` | Virtual Filesystem ใน RAM ส่องดูสถานะ Kernel, ฮาร์ดแวร์ และ Processes | อ่านข้อมูลระบบสด: `/proc/version`, `/proc/cmdline`, ส่อง Process Memory ผ่าน `/proc/<PID>/` |
+| `/run` | เก็บสถานะ Runtime ชั่วคราวตั้งแต่เปิดเครื่อง (PID files, UNIX Domain Sockets) | สำรวจ Active Sockets และ IPC (Inter-Process Communication) เพื่อหาช่องทาง Lateral Movement |
 
 ### 💻 Essential Commands
 ```bash
@@ -89,6 +97,11 @@ ls -la
 
 # ดูโครงสร้างแบบต้นไม้ (เจาะลึก 1 ระดับ)
 tree -L 1 /
+
+# สำรวจซอฟต์แวร์เพิ่มเติมและจุดเมานต์ระบบ (Third-party, Mounts, Removable)
+ls -la /opt                     # สำรวจโฟลเดอร์ซอฟต์แวร์เสริม (มักพบเครื่องมือเฉพาะของเป้าหมาย)
+ls -la /mnt                     # สำรวจไดรฟ์หรือ Network Shares ที่เมานต์ไว้
+ls -la /media                   # สำรวจ Flash Drive / Removable Media ที่เชื่อมต่ออยู่
 
 # สร้างโฟลเดอร์ทดลองพร้อมโฟลเดอร์ย่อย
 mkdir -p ~/lab/test_dir
