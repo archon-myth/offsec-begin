@@ -39,7 +39,7 @@
 | :---: | :--- | :--- | :--- |
 | **0** | [phase-0-setup](../phase-0-setup/) | Setup & Mindset | [[Setup-VirtualBox]], [[Setup-HybridSSD]], [[mindset-and-ethics]] |
 | **A** | [phase-a-foundations](../phase-a-foundations/) | Linux, Networking, Bash | [[linux-fundamentals]], [[bash-scripting-mastery]], [[linux-internals-and-security]], [[networking-packet-mechanics]], [[tryhackme-pre-security]], [[http-and-web-mechanics]] |
-| **B** | [phase-b-scripting](../phase-b-scripting/) | Python, Regex, Recon | [[python-for-offsec]], [[regex-mastery]], [[recon-automation]] |
+| **B** | [phase-b-scripting](../phase-b-scripting/) | Python, Regex, Recon | [[python-for-offsec]], [[regex-mastery]], [[recon-automation]], [[network-recon-and-nmap]], [[reverse-shells-and-metasploit]], [[password-cracking-hashcat]], [[hardware-badusb-attacks]] |
 | **C** | [phase-c-web](../phase-c-web/) | Web Exploitation & OWASP | [[owasp-top-10-deep-dive]], [[portswigger-web-security-academy]], [[burp-suite-mastery]], [[bug-bounty-methodology]] |
 | **D** | [phase-d-exploit](../phase-d-exploit/) | Binary Exploitation & BoF | [[x86-x64-assembly-internals]], [[buffer-overflow-fundamentals]], [[modern-binary-protections]] |
 | **E** | [phase-e-cloud](../phase-e-cloud/) | Cloud Offensive Security | [[aws-offensive-security]], [[azure-and-gcp-offensive-security]], [[container-and-k8s-security]] |
