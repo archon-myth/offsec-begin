@@ -1,14 +1,14 @@
-# 🛠️ David Bombal & OccupyTheWeb: Linux Basics for Hackers & Shell Setup
+# 🛠️ Linux Kernel Internals & Security Mechanisms
 
-> **Playlist:** [Linux for Hackers with OTW](https://www.youtube.com/playlist?list=PLhfrWIlLOoKMj3K_p3fl7Jb9qlmm1Z46_) & David Bombal Shell Mastery  
-> **Phase:** [phase-a-foundations](../) | **Tags:** `#linux` `#internals` `#otw` `#bombal` `#boot` `#history`  
-> **Master Curriculum:** [[curriculum-bombal-networkchuck#1.3 David Bombal + OccupyTheWeb — Linux Basics for Hackers (6 ตอนระดับ Internals)|Curriculum Checklist (1.3 & 1.4)]]
+> **Playlist:** [Linux for Hackers with OTW](https://www.youtube.com/playlist?list=PLhfrWIlLOoKMj3K_p3fl7Jb9qlmm1Z46_) & Core Systems Shell Mastery  
+> **Phase:** [phase-a-foundations](../) | **Tags:** `#linux` `#internals` `#security-internals` `#kernel` `#boot` `#history`  
+> **Master Curriculum:** [[foundations-execution-blueprint#1.3 Core Systems + Kernel Security — Linux Basics for Hackers (6 ตอนระดับ Internals)|Curriculum Checklist (1.3 & 1.4)]]
 
 ---
 
 ## 📑 Course Episodes Overview
 
-### ส่วนที่ 1.3: Linux Basics with OccupyTheWeb (6 ตอน)
+### ส่วนที่ 1.3: Linux Basics with Kernel Security (6 ตอน)
 - [ ] [[#EP 1 — Linux for Hackers Tutorial & Philosophy|EP 1: ปรัชญาแฮกเกอร์กับ Linux จาก OTW]]
 - [ ] [[#EP 2 — Deep File System Architecture|EP 2: สถาปัตยกรรมระบบไฟล์เชิงลึก]]
 - [ ] [[#EP 3 — Linux Networking You Need to Know|EP 3: Network Interfaces, Routing & DNS]]

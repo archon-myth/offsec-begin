@@ -1,8 +1,8 @@
-# 💻 NetworkChuck: learn BASH Scripting (Masterclass Notes)
+# 💻 Bash Scripting & Automation Mastery
 
 > **Playlist:** [learn BASH Scripting](https://www.youtube.com/playlist?list=PLIhvC56v63IKioClkSND5W7Qg-2TFtfQV)  
-> **Phase:** [phase-a-foundations](../) | **Tags:** `#bash` `#scripting` `#automation` `#networkchuck`  
-> **Master Curriculum:** [[curriculum-bombal-networkchuck#1.2 NetworkChuck — learn BASH Scripting (ครบทั้ง 5 ตอน)|Curriculum Checklist]]
+> **Phase:** [phase-a-foundations](../) | **Tags:** `#bash` `#scripting` `#automation` `#bash-automation`  
+> **Master Curriculum:** [[foundations-execution-blueprint#1.2 Bash Automation — learn BASH Scripting (ครบทั้ง 5 ตอน)|Curriculum Checklist]]
 
 ---
 

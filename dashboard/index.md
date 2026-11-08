@@ -17,7 +17,7 @@
 >  
 > **⏳ เป้าหมายที่กำลังดำเนินการ (Next Actions):**  
 > 1. [[mindset-and-ethics|อ่านกฎหมาย พ.ร.บ. คอมพิวเตอร์ และกรอบจริยธรรม OffSec]]  
-> 2. เรียนรู้ Foundations ตาม [[curriculum-bombal-networkchuck|David Bombal vs NetworkChuck Blueprint]]  
+> 2. เรียนรู้ Foundations ตาม [[foundations-execution-blueprint|David Bombal vs NetworkChuck Blueprint]]  
 > 3. เข้าสู่การฝึกบน [[tryhackme-pre-security|TryHackMe Pre-Security Path]]
 
 ---
@@ -27,7 +27,7 @@
 | File / Folder | Description & Direct Link |
 | :--- | :--- |
 | **Phase Tracker** | [[phase-tracker|phase-tracker.md]] — ความคืบหน้าระดับ Phase, เปอร์เซ็นต์, และ KPI Gates |
-| **Master Curriculum** | [[curriculum-bombal-networkchuck|curriculum-bombal-networkchuck.md]] — 10 Playlists ของ Bombal & NetworkChuck |
+| **Master Curriculum** | [[foundations-execution-blueprint|foundations-execution-blueprint.md]] — 10 Playlists ของ Bombal & NetworkChuck |
 | **Bug Bounty Log** | [[bug-bounty-log|bug-bounty-log.md]] — บันทึกผลการล่าช่องโหว่และ Bug Bounty |
 | **All Templates** | [templates/](../templates/) — 7 แม่แบบรายงานและบันทึกแล็บมาตรฐาน S.P.E.A.R. |
 
@@ -38,7 +38,7 @@
 | Phase | Folder | Focus Domain | Key Notes Available |
 | :---: | :--- | :--- | :--- |
 | **0** | [phase-0-setup](../phase-0-setup/) | Setup & Mindset | [[Setup-VirtualBox]], [[Setup-HybridSSD]], [[mindset-and-ethics]] |
-| **A** | [phase-a-foundations](../phase-a-foundations/) | Linux, Networking, Bash | [[networkchuck-linux-for-hackers]], [[networkchuck-bash-scripting]], [[bombal-linux-basics-otw]], [[bombal-networkchuck-networking]], [[tryhackme-pre-security]], [[http-and-web-mechanics]] |
+| **A** | [phase-a-foundations](../phase-a-foundations/) | Linux, Networking, Bash | [[linux-fundamentals]], [[bash-scripting-mastery]], [[linux-internals-and-security]], [[networking-packet-mechanics]], [[tryhackme-pre-security]], [[http-and-web-mechanics]] |
 | **B** | [phase-b-scripting](../phase-b-scripting/) | Python, Regex, Recon | [[python-for-offsec]], [[regex-mastery]], [[recon-automation]] |
 | **C** | [phase-c-web](../phase-c-web/) | Web Exploitation & OWASP | [[owasp-top-10-deep-dive]], [[portswigger-web-security-academy]], [[burp-suite-mastery]], [[bug-bounty-methodology]] |
 | **D** | [phase-d-exploit](../phase-d-exploit/) | Binary Exploitation & BoF | [[x86-x64-assembly-internals]], [[buffer-overflow-fundamentals]], [[modern-binary-protections]] |

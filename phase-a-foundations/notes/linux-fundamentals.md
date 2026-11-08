@@ -1,8 +1,8 @@
-# 🐧 NetworkChuck: Linux for Hackers (Full Course Notes)
+# 🐧 Linux Fundamentals & CLI Architecture
 
 > **Playlist:** [Linux for Hackers (FREE Course)](https://www.youtube.com/playlist?list=PLIhvC56v63IJIujb5cyE13oLuyORZpdkL)  
-> **Phase:** [phase-a-foundations](../) | **Tags:** `#linux` `#foundations` `#cli` `#networkchuck`  
-> **Master Curriculum:** [[curriculum-bombal-networkchuck#1.1 NetworkChuck — Linux for Hackers (ครบทั้ง 10 ตอน)|Curriculum Checklist]]
+> **Phase:** [phase-a-foundations](../) | **Tags:** `#linux` `#foundations` `#cli` `#linux-foundations`  
+> **Master Curriculum:** [[foundations-execution-blueprint#1.1 Linux Mastery — Linux for Hackers (ครบทั้ง 10 ตอน)|Curriculum Checklist]]
 
 ---
 

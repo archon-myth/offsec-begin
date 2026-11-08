@@ -46,6 +46,6 @@
 
 ### ⏳ Remaining Milestones (to reach 100%):
 - [ ] **Mindset & Ethics:** อ่าน [[mindset-and-ethics|พ.ร.บ. คอมพิวเตอร์ และ กรอบกติกาจริยธรรม]]
-- [ ] **Master Curriculum Foundations:** เริ่มดูและจดโน้ตตาม [[curriculum-bombal-networkchuck|Bombal vs NetworkChuck Blueprint]]
+- [ ] **Master Curriculum Foundations:** เริ่มดูและจดโน้ตตาม [[foundations-execution-blueprint|Bombal vs NetworkChuck Blueprint]]
 - [ ] **TryHackMe Pre-Security:** สมัครและเริ่มทำ [[tryhackme-pre-security|TryHackMe Pre-Security Path]]
 - [ ] **Write personal learning plan:** ทบทวนเป้าหมายและตารางเวลาประจำสัปดาห์

@@ -301,7 +301,7 @@ flowchart LR
 #### 🎬 Phase 1 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
 ##### 1.1 NetworkChuck — Linux for Hackers (ครบทั้ง 10 ตอน)
-> 📝 **บันทึกโน้ตที่ไฟล์:** [networkchuck-linux-for-hackers.md](file:///A:/offsec-begin/phase-a-foundations/notes/networkchuck-linux-for-hackers.md) *(ใน Obsidian: `[[networkchuck-linux-for-hackers]]`)*
+> 📝 **บันทึกโน้ตที่ไฟล์:** [linux-fundamentals.md](file:///A:/offsec-begin/phase-a-foundations/notes/linux-fundamentals.md) *(ใน Obsidian: `[[linux-fundamentals]]`)*
 1. [Linux for Hackers // EP 1 (FREE Linux course for beginners)](https://www.youtube.com/watch?v=VbEx7B_PTOE) — เริ่มต้นใช้ Command Line และปรัชญาของ Linux
 2. [the Linux File System explained in 1,233 seconds // EP 2](https://www.youtube.com/watch?v=A3G-3hp88mo) — ผ่าโครงสร้างไดเรกทอรี `/bin`, `/etc`, `/home`, `/var`
 3. [HELP!! (for when you suck at Linux) // EP 3](https://www.youtube.com/watch?v=Y17KTiJLcyQ) — การใช้ `man`, `--help`, และการแก้ปัญหาเมื่อพิมพ์คำสั่งไม่ถูก
@@ -314,7 +314,7 @@ flowchart LR
 10. [i KILLED my Linux computer!! (to teach you something)](https://www.youtube.com/watch?v=ugt3PBeqHIo) — วิเคราะห์ความผิดพลาดเมื่อระบบพัง และวิธี Troubleshooting
 
 ##### 1.2 NetworkChuck — learn BASH Scripting (ครบทั้ง 5 ตอน)
-> 📝 **บันทึกโน้ตที่ไฟล์:** [networkchuck-bash-scripting.md](file:///A:/offsec-begin/phase-a-foundations/notes/networkchuck-bash-scripting.md) *(ใน Obsidian: `[[networkchuck-bash-scripting]]`)*
+> 📝 **บันทึกโน้ตที่ไฟล์:** [bash-scripting-mastery.md](file:///A:/offsec-begin/phase-a-foundations/notes/bash-scripting-mastery.md) *(ใน Obsidian: `[[bash-scripting-mastery]]`)*
 1. [you need to learn BASH Scripting RIGHT NOW!! (EP 1)](https://www.youtube.com/watch?v=SPwyp2NG-bE) — เข้าใจ Shebang (`#!/bin/bash`), Permissions (`chmod +x`), สคริปต์แรก
 2. [BASH scripting will change your life (EP 2)](https://www.youtube.com/watch?v=7qd5sqazD7k) — Variables, รับค่า User Input (`read`), Arguments (`$1`, `$@`) ทำ Coffee Bot
 3. [this BASH script will make you a MILLIONAIRE (EP 3)](https://www.youtube.com/watch?v=19nN9vgcgmU) — System Environment Variables, `$RANDOM`, การคำนวณเลขคณิต
@@ -322,7 +322,7 @@ flowchart LR
 5. [a BASH script PUSH-UP counter (for #gains ) (EP 5)](https://www.youtube.com/watch?v=nW9M0MQinfg) — Loops (`while`, `until`, `for`) ทำโปรแกรม Push-up Counter
 
 ##### 1.3 David Bombal + OccupyTheWeb — Linux Basics for Hackers (6 ตอนระดับ Internals)
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-linux-basics-otw.md](file:///A:/offsec-begin/phase-a-foundations/notes/bombal-linux-basics-otw.md) *(ใน Obsidian: `[[bombal-linux-basics-otw]]`)*
+> 📝 **บันทึกโน้ตที่ไฟล์:** [linux-internals-and-security.md](file:///A:/offsec-begin/phase-a-foundations/notes/linux-internals-and-security.md) *(ใน Obsidian: `[[linux-internals-and-security]]`)*
 1. [Linux for Hackers Tutorial (And Free Courses) // EP 1](https://www.youtube.com/watch?v=YJUVNlmIO6E) — ปรัชญาแฮกเกอร์กับ Linux จาก OTW
 2. [Linux for Hackers Tutorial with OTW! (Episode 2)](https://www.youtube.com/watch?v=8z-s5KQ9DbI) — สถาปัตยกรรมระบบไฟล์เชิงลึก
 3. [Linux Networking that you need to know (Episode 3)](https://www.youtube.com/watch?v=t96iOUxC27M) — Network interfaces, Routing table, DNS config
@@ -331,7 +331,7 @@ flowchart LR
 6. [Linux for Hackers: LINUX commands you need to know (with OTW) // Ep 6](https://www.youtube.com/watch?v=DiGangfhJ4g) — Permissions ขั้นสูง (SUID, GUID) และ Text parsing (`awk`, `sed`, `grep`)
 
 ##### 1.4 David Bombal — Shell Setup & Boot
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-linux-basics-otw.md](file:///A:/offsec-begin/phase-a-foundations/notes/bombal-linux-basics-otw.md) *(ใน Obsidian: `[[bombal-linux-basics-otw#ส่วนที่ 1.4 Shell Setup Boot Mastery]]`)*
+> 📝 **บันทึกโน้ตที่ไฟล์:** [linux-internals-and-security.md](file:///A:/offsec-begin/phase-a-foundations/notes/linux-internals-and-security.md) *(ใน Obsidian: `[[linux-internals-and-security#ส่วนที่ 1.4 Shell Setup Boot Mastery]]`)*
 - [Dual Boot Windows and Ubuntu Linux in 10 Minutes](https://www.youtube.com/watch?v=UTqDuWHbZkw) — โครงสร้าง Bootloader และ Partitioning
 - [Learn Linux in 180s - history command](https://www.youtube.com/watch?v=3e2oYpEKrXE) — Shell history audit (`history`, `!`, reverse-i-search)
 
@@ -351,26 +351,26 @@ flowchart LR
 #### 🎬 Phase 2 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
 ##### 2.1 NetworkChuck — Networking & Subnetting
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-networkchuck-networking.md](file:///A:/offsec-begin/phase-a-foundations/notes/bombal-networkchuck-networking.md) *(ใน Obsidian: `[[bombal-networkchuck-networking]]`)*
+> 📝 **บันทึกโน้ตที่ไฟล์:** [networking-packet-mechanics.md](file:///A:/offsec-begin/phase-a-foundations/notes/networking-packet-mechanics.md) *(ใน Obsidian: `[[networking-packet-mechanics]]`)*
 1. [what is an IP Address? // You SUCK at Subnetting // EP 1](https://www.youtube.com/watch?v=5WfiTHiU4x8) — หัวใจของ IP Addressing และ Subnet Mask
 2. [What is a SWITCH? // FREE CCNA // Day 1](https://www.youtube.com/watch?v=9eH16Fxeb9o) — Layer 2 Data Link, MAC Address Table, Broadcast Domain
 3. [What is a ROUTER? // FREE CCNA // EP 2](https://www.youtube.com/watch?v=p9ScLm9S3B4) — Layer 3 Network, IP Routing, Default Gateway
 4. [FREE CCNA // What is a Network? // Day 0](https://www.youtube.com/watch?v=S7MNX_UD7vY) — ภาพรวมการเดินทางของ Packet ข้ามเครือข่าย
 
 ##### 2.2 David Bombal — TCP 3-Way Handshake
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-networkchuck-networking.md](file:///A:/offsec-begin/phase-a-foundations/notes/bombal-networkchuck-networking.md#module-2--tcp-3-way-handshake-deep-dive) *(ใน Obsidian: `[[bombal-networkchuck-networking#Module 2]]`)*
+> 📝 **บันทึกโน้ตที่ไฟล์:** [networking-packet-mechanics.md](file:///A:/offsec-begin/phase-a-foundations/notes/networking-packet-mechanics.md#module-2--tcp-3-way-handshake-deep-dive) *(ใน Obsidian: `[[networking-packet-mechanics#Module 2]]`)*
 1. [How TCP really works // Three-way handshake // Deep Dive (feat. Chris Greer)](https://www.youtube.com/watch?v=rmFX1V49K8U) — วิเคราะห์ Sequence Number, ACK, และ Window Size ระดับ Byte
 2. [How TCP really works: Top 3 things you need to know!](https://www.youtube.com/watch?v=Auwn3RWapRE) — สรุป 3 สิ่งสำคัญที่สุดเกี่ยวกับกลไก TCP
 
 ##### 2.3 David Bombal — ARP Poisoning, MITM & Password Sniffing
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-networkchuck-networking.md](file:///A:/offsec-begin/phase-a-foundations/notes/bombal-networkchuck-networking.md#module-3--arp-poisoning--man-in-the-middle) *(ใน Obsidian: `[[bombal-networkchuck-networking#Module 3]]`)*
+> 📝 **บันทึกโน้ตที่ไฟล์:** [networking-packet-mechanics.md](file:///A:/offsec-begin/phase-a-foundations/notes/networking-packet-mechanics.md#module-3--arp-poisoning--man-in-the-middle) *(ใน Obsidian: `[[networking-packet-mechanics#Module 3]]`)*
 1. [Kali Linux: Hacking ARP (ARP Poisoning / MITM)](https://www.youtube.com/watch?v=ns7TYxNcYBM) — สาธิตการโจมตี ARP Cache Poisoning ด้วย Kali Linux
 2. [Wireshark Tutorial - Installation and Password sniffing](https://www.youtube.com/watch?v=4_7A8Ikp5Cc) — ดักจับรหัสผ่าน Cleartext ผ่าน Wireshark
 3. [Never use Telnet (Cleartext Password Capture)](https://www.youtube.com/watch?v=nGEKnYUEPcg) — ดักข้อมูล Telnet Session
 4. [Why are you still using HTTP? (Capturing Web Passwords)](https://www.youtube.com/watch?v=LfZNhf2Yc8k) — ดักจับรหัสผ่าน Form Login HTTP POST
 
 ##### 2.4 David Bombal — Nmap Signatures on the Wire
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-networkchuck-networking.md](file:///A:/offsec-begin/phase-a-foundations/notes/bombal-networkchuck-networking.md#module-4--port-scanning-wire-analysis) *(ใน Obsidian: `[[bombal-networkchuck-networking#Module 4]]`)*
+> 📝 **บันทึกโน้ตที่ไฟล์:** [networking-packet-mechanics.md](file:///A:/offsec-begin/phase-a-foundations/notes/networking-packet-mechanics.md#module-4--port-scanning-wire-analysis) *(ใน Obsidian: `[[networking-packet-mechanics#Module 4]]`)*
 1. [How Nmap really works // And how to catch it with Wireshark (feat. Chris Greer)](https://www.youtube.com/watch?v=F2PXe_o7KqM) — เปรียบเทียบ Stealth SYN scan กับ Connect scan บนสาย
 2. [Wireshark Display Filters Tutorial](https://www.youtube.com/watch?v=WdBBYosG-YI) — การเขียน Display Filters คัดกรอง Traffic สำหรับงาน Forensics
 
@@ -390,20 +390,20 @@ flowchart LR
 #### 🎬 Phase 3 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
 ##### 3.1 NetworkChuck — Reconnaissance & Nmap
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-networkchuck-nmap-and-recon.md](file:///A:/offsec-begin/phase-b-scripting/notes/bombal-networkchuck-nmap-and-recon.md) *(ใน Obsidian: `[[bombal-networkchuck-nmap-and-recon]]`)*\n1. [Nmap Tutorial to find Network Vulnerabilities](https://www.youtube.com/watch?v=4t4kBkMsDbQ) — คู่มือ Nmap สำหรับค้นหาช่องโหว่บนระบบ
+> 📝 **บันทึกโน้ตที่ไฟล์:** [network-recon-and-nmap.md](file:///A:/offsec-begin/phase-b-scripting/notes/network-recon-and-nmap.md) *(ใน Obsidian: `[[network-recon-and-nmap]]`)*\n1. [Nmap Tutorial to find Network Vulnerabilities](https://www.youtube.com/watch?v=4t4kBkMsDbQ) — คู่มือ Nmap สำหรับค้นหาช่องโหว่บนระบบ
 2. [you need to learn HACKING RIGHT NOW!! // CEH](https://www.youtube.com/watch?v=yFC8pb2TPdc) — ภาพรวมขั้นตอนการทำ Ethical Hacking และ Footprinting
 3. [Google HACKING (use google search to HACK!)](https://www.youtube.com/watch?v=hrVa_dhD-iA) — การทำ OSINT และ Google Dorking ค้นหาข้อมูลรั่วไหล
 
 ##### 3.2 NetworkChuck — Reverse Shells & Wireless
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-networkchuck-shells-and-metasploit.md](file:///A:/offsec-begin/phase-b-scripting/notes/bombal-networkchuck-shells-and-metasploit.md) *(ใน Obsidian: `[[bombal-networkchuck-shells-and-metasploit]]`)*\n1. [how to get remote access to your hacking targets // reverse shells with netcat](https://www.youtube.com/watch?v=bXCeFPNWjsM) — กลไก Reverse Shell ด้วย Netcat
+> 📝 **บันทึกโน้ตที่ไฟล์:** [reverse-shells-and-metasploit.md](file:///A:/offsec-begin/phase-b-scripting/notes/reverse-shells-and-metasploit.md) *(ใน Obsidian: `[[reverse-shells-and-metasploit]]`)*\n1. [how to get remote access to your hacking targets // reverse shells with netcat](https://www.youtube.com/watch?v=bXCeFPNWjsM) — กลไก Reverse Shell ด้วย Netcat
 2. [3 Levels of WiFi Hacking (Noob vs Hipster vs Pro)](https://www.youtube.com/watch?v=Ck7wB7pdebQ) — ภาพรวมการโจมตีระบบเครือข่ายไร้สาย 3 รูปแบบ
 
 ##### 3.3 David Bombal — Metasploit Framework
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-networkchuck-shells-and-metasploit.md](file:///A:/offsec-begin/phase-b-scripting/notes/bombal-networkchuck-shells-and-metasploit.md#33-david-bombal--metasploit-framework) *(ใน Obsidian: `[[bombal-networkchuck-shells-and-metasploit#3.3]]`)*\n1. [Unleashing Metasploit: The Comprehensive Toolkit](https://www.youtube.com/watch?v=GxkKszPVD1M) — เจาะลึก Metasploit Modules, Payloads และ Meterpreter
+> 📝 **บันทึกโน้ตที่ไฟล์:** [reverse-shells-and-metasploit.md](file:///A:/offsec-begin/phase-b-scripting/notes/reverse-shells-and-metasploit.md#33-david-bombal--metasploit-framework) *(ใน Obsidian: `[[reverse-shells-and-metasploit#3.3]]`)*\n1. [Unleashing Metasploit: The Comprehensive Toolkit](https://www.youtube.com/watch?v=GxkKszPVD1M) — เจาะลึก Metasploit Modules, Payloads และ Meterpreter
 2. [Kali Linux: Hacking Networks Part 1](https://www.youtube.com/watch?v=K1bMSPje6pw) — เทคนิคการสแกนและเตรียมการโจมตีเครือข่าย
 
 ##### 3.4 David Bombal — Web Testing & Kali Arsenal
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-networkchuck-nmap-and-recon.md](file:///A:/offsec-begin/phase-b-scripting/notes/bombal-networkchuck-nmap-and-recon.md#34-david-bombal--web-testing--kali-arsenal) *(ใน Obsidian: `[[bombal-networkchuck-nmap-and-recon#3.4]]`)*\n1. [Burp Suite Tutorial for Beginners](https://www.youtube.com/watch?v=-CLE7ndoUqE) — ตั้งค่า FoxyProxy, Intercept Request, และใช้งาน Repeater
+> 📝 **บันทึกโน้ตที่ไฟล์:** [network-recon-and-nmap.md](file:///A:/offsec-begin/phase-b-scripting/notes/network-recon-and-nmap.md#34-david-bombal--web-testing--kali-arsenal) *(ใน Obsidian: `[[network-recon-and-nmap#3.4]]`)*\n1. [Burp Suite Tutorial for Beginners](https://www.youtube.com/watch?v=-CLE7ndoUqE) — ตั้งค่า FoxyProxy, Intercept Request, และใช้งาน Repeater
 2. [hydra (Online Password Brute-forcing)](https://www.youtube.com/watch?v=3_f-SWQP3x0) — การยิง Brute-force รหัสผ่าน SSH/FTP/Web ด้วย Hydra
 
 ---
@@ -422,12 +422,12 @@ flowchart LR
 #### 🎬 Phase 4 Video Execution Card (คลิกลิงก์เพื่อเริ่มเรียน)
 
 ##### 4.1 David Bombal — Hashcat Core Mastery
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-hashcat-cracking-mastery.md](file:///A:/offsec-begin/phase-b-scripting/notes/bombal-hashcat-cracking-mastery.md) *(ใน Obsidian: `[[bombal-hashcat-cracking-mastery]]`)*\n1. [Advanced Bruteforce WiFi WPA2 cracking with GPU and Hashcat](https://www.youtube.com/watch?v=yvNKuZqRmJ4) — การใช้ GPU Compute แคร็กรหัสผ่านความเร็วสูง
+> 📝 **บันทึกโน้ตที่ไฟล์:** [password-cracking-hashcat.md](file:///A:/offsec-begin/phase-b-scripting/notes/password-cracking-hashcat.md) *(ใน Obsidian: `[[password-cracking-hashcat]]`)*\n1. [Advanced Bruteforce WiFi WPA2 cracking with GPU and Hashcat](https://www.youtube.com/watch?v=yvNKuZqRmJ4) — การใช้ GPU Compute แคร็กรหัสผ่านความเร็วสูง
 2. [WiFi WPA/WPA2 vs hashcat and hcxdumptool](https://www.youtube.com/watch?v=Usw0IlGbkC4) — กระบวนการสกัดและแปลงไฟล์แคปเจอร์
 3. [Bruteforce WiFi WPA2 with GPU](https://www.youtube.com/watch?v=b5zQ6xTQGfY) — เทคนิคการสร้าง Wordlists และ Mask
 
 ##### 4.2 David Bombal — WPA2/WPA3 Mode 22000 & Cloud Cracking
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-hashcat-cracking-mastery.md](file:///A:/offsec-begin/phase-b-scripting/notes/bombal-hashcat-cracking-mastery.md#42-david-bombal--wpa2wpa3-mode-22000--cloud-cracking) *(ใน Obsidian: `[[bombal-hashcat-cracking-mastery#4.2]]`)*\n1. [16 secs to break it! WPA2 WiFi cracking with Hashcat mode 22000](https://www.youtube.com/watch?v=ZTIB9Ki9VtY) — การโจมตี PMKID สมัยใหม่โดยไม่ต้องรอ Client ต่อ Wi-Fi
+> 📝 **บันทึกโน้ตที่ไฟล์:** [password-cracking-hashcat.md](file:///A:/offsec-begin/phase-b-scripting/notes/password-cracking-hashcat.md#42-david-bombal--wpa2wpa3-mode-22000--cloud-cracking) *(ใน Obsidian: `[[password-cracking-hashcat#4.2]]`)*\n1. [16 secs to break it! WPA2 WiFi cracking with Hashcat mode 22000](https://www.youtube.com/watch?v=ZTIB9Ki9VtY) — การโจมตี PMKID สมัยใหม่โดยไม่ต้องรอ Client ต่อ Wi-Fi
 2. [Break WiFi networks using Cloud GPUs in seconds](https://www.youtube.com/watch?v=KupkzhM4z4Y) — รัน Hashcat บน Cloud instances (NVIDIA CUDA)
 
 ##### 4.3 NetworkChuck — Active Directory Architecture
@@ -435,7 +435,7 @@ flowchart LR
 2. [Windows Server 2022 Introduction to Active Directory](https://www.youtube.com/watch?v=yAZEQmaCqEM) — การติดตั้ง Domain Controller สำหรับ Home Lab
 
 ##### 4.4 David Bombal — Hak5 Hardware & BadUSB
-> 📝 **บันทึกโน้ตที่ไฟล์:** [bombal-hardware-badusb.md](file:///A:/offsec-begin/phase-b-scripting/notes/bombal-hardware-badusb.md) *(ใน Obsidian: `[[bombal-hardware-badusb]]`)*\n1. [Hacking Gadgets Every Cybersecurity Pro Should Know (feat. Darren Kitchen)](https://www.youtube.com/watch?v=6ckvxEQEBn8) — สัมภาษณ์ทีม Hak5 เจาะลึกอุปกรณ์ทุกประเภท
+> 📝 **บันทึกโน้ตที่ไฟล์:** [hardware-badusb-attacks.md](file:///A:/offsec-begin/phase-b-scripting/notes/hardware-badusb-attacks.md) *(ใน Obsidian: `[[hardware-badusb-attacks]]`)*\n1. [Hacking Gadgets Every Cybersecurity Pro Should Know (feat. Darren Kitchen)](https://www.youtube.com/watch?v=6ckvxEQEBn8) — สัมภาษณ์ทีม Hak5 เจาะลึกอุปกรณ์ทุกประเภท
 2. [Hak5 Rubber Ducky Demos (Disable Defender, Encrypt files)](https://www.youtube.com/watch?v=kFB69SywIKc) — สาธิต Keystroke Injection ผ่าน USB Rubber Ducky
 3. [This dangerous USB can hack your computer in seconds!](https://www.youtube.com/watch?v=3yiT_WMlosg) — อันตรายของ Hot-plug hardware attacks
 
