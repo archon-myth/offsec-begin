@@ -23,13 +23,13 @@
 
 ## 📜 Certification Target Milestones
 
-| Target | Cert | Target Window | Status | Study Guide | Core Competency & Milestone |
-| :---: | :--- | :---: | :---: | :--- | :--- |
-| 🥉 | **eJPT** | **Month 8–10** | ⏳ | [[certs/ejpt/study-guide\|eJPT Study Guide]] | Junior Pentester Baseline · Practical Network Penetration Testing |
-| ☁️ | **AWS SAA** | **Month 11–12** | ⏳ | *(Cloud Architecture)* | Cloud Infrastructure Security & Offensive Cloud Foundations |
-| 🥈 | **PNPT** | **Month 13–16** | ⏳ | [[certs/pnpt/study-guide\|PNPT Study Guide]] | Practical Network Pentesting · Real-world Enterprise Engagement |
-| 🥈 | **CRTO** | **Month 19–21** | ⏳ | [[certs/crto/study-guide\|CRTO Study Guide]] | Active Directory Attacks, C2 Operations & Evasion Tradecraft |
-| 🥇 | **OSCP** | **Month 22–24** | ⏳ | [[certs/oscp/study-guide\|OSCP Study Guide]] | Advanced Hands-on Penetration Testing · Industry Gold Standard |
+| Target | Cert        |  Target Window  | Status | Study Guide                                  | Core Competency & Milestone                                       |
+| :----: | :---------- | :-------------: | :----: | :------------------------------------------- | :---------------------------------------------------------------- |
+|   🥉   | **eJPT**    | **Month 8–10**  |   ⏳    | [[certs/ejpt/study-guide\|eJPT Study Guide]] | Junior Pentester Baseline · Practical Network Penetration Testing |
+|   ☁️   | **AWS SAA** | **Month 11–12** |   ⏳    | *(Cloud Architecture)*                       | Cloud Infrastructure Security & Offensive Cloud Foundations       |
+|   🥈   | **PNPT**    | **Month 13–16** |   ⏳    | [[certs/pnpt/study-guide\|PNPT Study Guide]] | Practical Network Pentesting · Real-world Enterprise Engagement   |
+|   🥈   | **CRTO**    | **Month 19–21** |   ⏳    | [[certs/crto/study-guide\|CRTO Study Guide]] | Active Directory Attacks, C2 Operations & Evasion Tradecraft      |
+|   🥇   | **OSCP**    | **Month 22–24** |   ⏳    | [[certs/oscp/study-guide\|OSCP Study Guide]] | Advanced Hands-on Penetration Testing · Industry Gold Standard    |
 
 ---
 
