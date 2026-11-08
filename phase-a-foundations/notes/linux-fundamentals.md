@@ -9,7 +9,7 @@
 
 - [x] [[#Module 01: Linux CLI Philosophy & Navigation|Module 01: ปรัชญา Linux & เริ่มต้น CLI]]
 - [x] [[#Module 02: Linux Filesystem Hierarchy|Module 02: โครงสร้าง Filesystem Hierarchy]]
-- [ ] [[#Module 03: System Manuals & Troubleshooting|Module 03: การใช้ man, --help และการแก้ปัญหา]]
+- [x] [[#Module 03: System Manuals & Troubleshooting|Module 03: การใช้ man, --help และการแก้ปัญหา]]
 - [ ] [[#Module 04: User Privileges & Sudoers Architecture|Module 04: Users, Groups & สิทธิ์ Sudo]]
 - [ ] [[#Module 05: Package Management & Tool Installations|Module 05: Package Management (apt, dpkg, git, pip)]]
 - [ ] [[#Module 06: Systemd Services & Daemon Management|Module 06: ควบคุม Systemd Services]]
@@ -144,7 +144,7 @@ sudo adduser newuser
 ---
 
 ## Module 03: System Manuals & Troubleshooting
-- **Status:** ⏳ Not Started (Next Up)
+- **Status:** ✅ Completed
 - **Core Concept:** การหาตัวช่วยเมื่อจำคำสั่งหรือ Flag ไม่ได้ แฮกเกอร์ตัวจริงไม่ได้จำทุกตัวอักษร แต่ 'ค้นหาคู่มือเป็นในเสี้ยววินาที'
 
 ### 📝 Key Notes & Mindset
@@ -209,7 +209,7 @@ ps -ef                          # ส่องทุก Process พร้อม�
 ---
 
 ## Module 04: User Privileges & Sudoers Architecture
-- **Status:** ⏳ Not Started
+- **Status:** ⏳ Not Started (Next Up)
 - **Core Concept:** สถาปัตยกรรมสิทธิ์ผู้ใช้งาน (Access Control): Root (UID 0) คือพระเจ้า การบริหารจัดการ Users, Groups และกลไกยกระดับสิทธิ์ผ่าน `sudo`
 
 ### 📝 Key Notes & Mindset
