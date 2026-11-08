@@ -28,7 +28,7 @@
 | :--- | :--- |
 | **Phase Tracker** | [[phase-tracker|phase-tracker.md]] — ความคืบหน้าระดับ Phase, เปอร์เซ็นต์, และ KPI Gates |
 | **Bug Bounty Log** | [[bug-bounty-log|bug-bounty-log.md]] — บันทึกผลการล่าช่องโหว่และ Bug Bounty |
-| **All Templates** | [[templates/template-lab-writeup|templates/]] — 7 แม่แบบรายงานและบันทึกแล็บมาตรฐาน S.P.E.A.R. |
+| **All Templates** | [[templates/template-lab-writeup|templates/]] — 7 แม่แบบรายงานและบันทึกแล็บมาตรฐาน (Standard Security Reporting) |
 
 ---
 

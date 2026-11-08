@@ -1,36 +1,34 @@
 # 🐧 Linux Fundamentals & CLI Architecture
 
-> **Playlist:** [Linux for Hackers (FREE Course)](https://www.youtube.com/playlist?list=PLIhvC56v63IJIujb5cyE13oLuyORZpdkL)  
-> **Phase:** [phase-a-foundations](../) | **Tags:** `#linux` `#foundations` `#cli` `#linux-foundations`  
-> **Master Curriculum:** [[foundations-execution-blueprint#1.1 Linux Mastery — Linux for Hackers (ครบทั้ง 10 ตอน)|Curriculum Checklist]]
+> **Phase:** `Phase A — Core Foundations` | **Tags:** `#linux` `#foundations` `#cli` `#sysadmin`  
+> **Status:** 🔄 In Progress | **Focus:** Linux Command Line, Filesystem, Permissions & Daemons
 
 ---
 
-## 📑 Course Episodes Overview
+## 📑 Core Modules Overview
 
-- [x] [[#EP 1 — Linux for Hackers // EP 1 (FREE Linux course for beginners)|EP 1: ปรัชญา Linux & เริ่มต้น CLI]]
-- [ ] [[#EP 2 — The Linux File System Explained|EP 2: โครงสร้าง File Hierarchy]]
-- [ ] [[#EP 3 — HELP!! (for when you suck at Linux)|EP 3: การใช้ man, --help และ Troubleshooting]]
-- [ ] [[#EP 4 — sudo = POWER!! (Managing Users)|EP 4: Users, Groups & sudoers]]
-- [ ] [[#EP 5 — apt, dpkg, git, Python PiP|EP 5: Package Management]]
-- [ ] [[#EP 6 — Services & Daemon Hunting|EP 6: ควบคุม Systemd Services]]
-- [ ] [[#EP 7 — KILL Linux Processes|EP 7: Process Management & Signals]]
-- [ ] [[#EP 8 — 2 Cool (Web) Things to do in Linux|EP 8: Web Server & curl]]
-- [ ] [[#EP 9 — Terminal Hacks You Need|EP 9: คีย์ลัด Terminal เร่งความเร็ว]]
-- [ ] [[#EP 10 — I KILLED my Linux Computer|EP 10: วิเคราะห์และแก้ปัญหาเมื่อระบบพัง]]
+- [ ] [[#Module 01: Linux CLI Philosophy & Navigation|Module 01: ปรัชญา Linux & เริ่มต้น CLI]]
+- [ ] [[#Module 02: Linux Filesystem Hierarchy|Module 02: โครงสร้าง Filesystem Hierarchy]]
+- [ ] [[#Module 03: System Manuals & Troubleshooting|Module 03: การใช้ man, --help และการแก้ปัญหา]]
+- [ ] [[#Module 04: User Privileges & Sudoers Architecture|Module 04: Users, Groups & สิทธิ์ Sudo]]
+- [ ] [[#Module 05: Package Management & Tool Installations|Module 05: Package Management (apt, dpkg, git, pip)]]
+- [ ] [[#Module 06: Systemd Services & Daemon Management|Module 06: ควบคุม Systemd Services]]
+- [ ] [[#Module 07: Process Monitoring & Signal Handling|Module 07: Process Management & Signals]]
+- [ ] [[#Module 08: Lightweight Web Services & HTTP Querying|Module 08: Web Server & curl]]
+- [ ] [[#Module 09: Terminal Productive Workflows & Aliases|Module 09: คีย์ลัด Terminal และเทคนิคคำสั่ง]]
+- [ ] [[#Module 10: System Diagnostic Breakdown & Recovery|Module 10: การวิเคราะห์และกู้คืนเมื่อระบบพัง]]
 
 ---
 
-## EP 1 — Linux for Hackers // EP 1 (FREE Linux course for beginners)
-- **Video Link:** [YouTube — Linux for Hackers // EP 1](https://www.youtube.com/watch?v=VbEx7B_PTOE)
-- **Status:** 🔄 กำลังเรียน
+## Module 01: Linux CLI Philosophy & Navigation
+- **Status:** ⏳ Not Started
 - **Core Concept:** ทำไมแฮกเกอร์ถึงใช้ Linux? (Open-source, ควบคุมระดับ Kernel, น้ำหนักเบา, Automate ผ่าน CLI ได้ 100%)
 
 ### 📝 Key Notes & Mindset
 - Linux ไม่ใช่แค่ OS เดียว แต่คือ **Kernel** ที่ถูกนำมาแจกจ่ายเป็น Distributions (Distros) เช่น Debian, Kali, Ubuntu, Arch
-- แฮกเกอร์ใช้ CLI เพราะรวดเร็ว, ใช้ทรัพยากรน้อย, และสามารถส่ง Output จากคำสั่งหนึ่งต่อไปยังอีกคำสั่งหนึ่งผ่าน Pipe (`|`) ได้
+- วิศวกรความปลอดภัยใช้ CLI เพราะรวดเร็ว, ใช้ทรัพยากรน้อย, และสามารถส่ง Output จากคำสั่งหนึ่งต่อไปยังอีกคำสั่งหนึ่งผ่าน Pipe (`|`) ได้
 
-### 💻 Essential Commands Learned
+### 💻 Essential Commands
 ```bash
 # ตรวจสอบตัวตนผู้ใช้งานปัจจุบัน
 whoami
@@ -38,7 +36,7 @@ whoami
 # ตรวจสอบไดเรกทอรีปัจจุบัน (Print Working Directory)
 pwd
 
-# ดูรายชื่อไฟล์และโฟลเดอร์
+# ดูรายชื่อไฟล์และโฟลเดอร์แบบละเอียด
 ls -la
 
 # สลับไปยังไดเรกทอรีที่ต้องการ
@@ -57,10 +55,9 @@ clear
 
 ---
 
-## EP 2 — The Linux File System Explained
-- **Video Link:** [YouTube — Linux File System Explained in 1,233 seconds](https://www.youtube.com/watch?v=A3G-3hp88mo)
-- **Status:** ⏳ รอคิว
-- **Core Concept:** ผ่าโครงสร้างระบบไฟล์ของ Linux ทุกสิ่งทุกอย่างใน Linux คือ "ไฟล์" (Everything is a file)
+## Module 02: Linux Filesystem Hierarchy
+- **Status:** ⏳ Not Started
+- **Core Concept:** ผ่าโครงสร้างระบบไฟล์ของ Linux ทุกสิ่งทุกอย่างใน Linux คือ 'ไฟล์' (Everything is a file)
 
 ### 📝 Directory Hierarchy Reference
 | Directory | Purpose / Typical Contents |
@@ -75,9 +72,8 @@ clear
 | `/tmp` | เก็บไฟล์ชั่วคราว ล้างทิ้งอัตโนมัติเมื่อรีบูต |
 | `/mnt`, `/media` | จุดสำหรับ Mount ไดรฟ์ภายนอก หรือ Shared Folders |
 
-### 💻 Essential Commands Learned
+### 💻 Essential Commands
 ```bash
-# ตัวอย่างคำสั่งสำรวจระบบไฟล์
 cd /
 ls -la
 tree -L 1 /
@@ -88,12 +84,11 @@ tree -L 1 /
 
 ---
 
-## EP 3 — HELP!! (for when you suck at Linux)
-- **Video Link:** [YouTube — HELP!! // EP 3](https://www.youtube.com/watch?v=Y17KTiJLcyQ)
-- **Status:** ⏳ รอคิว
+## Module 03: System Manuals & Troubleshooting
+- **Status:** ⏳ Not Started
 - **Core Concept:** การหาตัวช่วยเมื่อจำคำสั่งไม่ได้ (`man`, `--help`, `whatis`, `apropos`)
 
-### 💻 Commands Learned
+### 💻 Essential Commands
 ```bash
 # ดูคู่มือฉบับเต็ม
 man ls
@@ -107,49 +102,42 @@ apropos "firewall"
 
 ---
 
-## EP 4 — sudo = POWER!! (Managing Users)
-- **Video Link:** [YouTube — sudo = POWER!! // EP 4](https://www.youtube.com/watch?v=jwnvKOjmtEA)
-- **Status:** ⏳ รอคิว
+## Module 04: User Privileges & Sudoers Architecture
+- **Status:** ⏳ Not Started
 - **Core Concept:** User, Group, และการให้สิทธิ์ Root ผ่าน `/etc/sudoers`
 
 ---
 
-## EP 5 — apt, dpkg, git, Python PiP
-- **Video Link:** [YouTube — Package Management // EP 5](https://www.youtube.com/watch?v=vX3krP6JmOY)
-- **Status:** ⏳ รอคิว
+## Module 05: Package Management & Tool Installations
+- **Status:** ⏳ Not Started
 - **Core Concept:** การติดตั้งและจัดการโปรแกรมด้วย APT, Debian packages, Git clone และ PIP
 
 ---
 
-## EP 6 — Services & Daemon Hunting
-- **Video Link:** [YouTube — Daemon HUNTING // EP 6](https://www.youtube.com/watch?v=wOWhfNB_r-0)
-- **Status:** ⏳ รอคิว
+## Module 06: Systemd Services & Daemon Management
+- **Status:** ⏳ Not Started
 - **Core Concept:** Systemd, การเปิด-ปิด Service (`systemctl start/stop/status/enable`)
 
 ---
 
-## EP 7 — KILL Linux Processes
-- **Video Link:** [YouTube — KILL Linux processes // EP 7](https://www.youtube.com/watch?v=LfC6pv8VISk)
-- **Status:** ⏳ รอคิว
+## Module 07: Process Monitoring & Signal Handling
+- **Status:** ⏳ Not Started
 - **Core Concept:** Process IDs (PID), ส่อง Process (`ps aux`, `top`, `htop`), การส่ง Signals (`kill -9`, `killall`)
 
 ---
 
-## EP 8 — 2 Cool (Web) Things to do in Linux
-- **Video Link:** [YouTube — 2 cool (web) things // EP 8](https://www.youtube.com/watch?v=HSRghjwTTOQ)
-- **Status:** ⏳ รอคิว
+## Module 08: Lightweight Web Services & HTTP Querying
+- **Status:** ⏳ Not Started
 - **Core Concept:** การเปิด Local Web Server และการทดสอบยิง Request ด้วย `curl` / `wget`
 
 ---
 
-## EP 9 — Terminal Hacks You Need
-- **Video Link:** [YouTube — Linux Terminal hacks // EP 9](https://www.youtube.com/watch?v=ACM36qtHIEg)
-- **Status:** ⏳ รอคิว
+## Module 09: Terminal Productive Workflows & Aliases
+- **Status:** ⏳ Not Started
 - **Core Concept:** คีย์ลัดเร่งความเร็ว (`Ctrl + R`, `Tab`, `Ctrl + A`, `Ctrl + E`, Aliases)
 
 ---
 
-## EP 10 — I KILLED my Linux Computer
-- **Video Link:** [YouTube — i KILLED my Linux computer // EP 10](https://www.youtube.com/watch?v=ugt3PBeqHIo)
-- **Status:** ⏳ รอคิว
+## Module 10: System Diagnostic Breakdown & Recovery
+- **Status:** ⏳ Not Started
 - **Core Concept:** จำลองระบบพัง วิเคราะห์ Error logs และวิธีคืนชีพระบบ

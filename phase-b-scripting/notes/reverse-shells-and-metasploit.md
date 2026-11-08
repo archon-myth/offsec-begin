@@ -1,7 +1,6 @@
 # 🐚 Reverse Shells & Metasploit Framework
 
 > **Phase:** [phase-b-scripting](../) | **Tags:** `#reverseshell` `#metasploit` `#meterpreter` `#netcat`  
-> **Master Curriculum:** [[foundations-execution-blueprint#Phase 3 การรวบรวมข้อมูลและเครื่องมือเจาะระบบแกนหลัก Recon Core Toolchains|Curriculum Checklist]]
 
 ---
 
@@ -12,7 +11,6 @@
 ---
 
 ## 3.2 Access Tradecraft — Reverse Shells & Wireless
-- **Video Link:** [YouTube — what is a REVERSE SHELL?](https://www.youtube.com/watch?v=kYv_wZf9Ebc)
 - **Status:** ⏳ รอคิว
 - **Core Concept:** Reverse Shell vs Bind Shell (ทำไม Reverse Shell ถึงหลบ Firewall Outbound ได้ง่ายกว่า), การเปิด Netcat Listener
 
@@ -31,6 +29,5 @@ python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SO
 ---
 
 ## 3.3 Exploit Frameworks — Metasploit Framework
-- **Video Link:** [YouTube — Metasploit for Beginners with Exploit Frameworks](https://www.youtube.com/watch?v=8lR27r8Y_ik)
 - **Status:** ⏳ รอคิว
 - **Core Concept:** สถาปัตยกรรม Metasploit: Exploits, Payloads, Auxiliaries, Post-modules, และการอัปเกรดเป็น Meterpreter Session
