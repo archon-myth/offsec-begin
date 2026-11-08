@@ -64,5 +64,4 @@
 
 | Date | Phase | Target / Platform | Writeup Link |
 | :--- | :---: | :--- | :--- |
-| 2026-06-05 | A | TryHackMe: Linux Fundamentals 1 | [[2026-06-05_THM_LinuxFundamentals1]] |
-| — | — | — | — |
+| — | — | *ยังไม่มีบันทึก (รอเขียนเมื่อเริ่มเจาะ Lab หรือ CTF เครื่องแรก)* | — |
