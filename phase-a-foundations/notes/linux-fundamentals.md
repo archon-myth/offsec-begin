@@ -154,36 +154,57 @@ sudo adduser newuser
   - Section 8: System Administration (`man 8 useradd`)
 - เมื่อไม่มี `man` ให้ลอง `--help` หรือ `-h` สำหรับ Quick Option Cheatsheet
 - การอ่านคู่มือคำสั่ง `ps` (`man ps`): ตัวอย่างคลาสสิกของคำสั่งที่มี 2 ไวยากรณ์ คือ Unix/POSIX Style (มีขีด เช่น `ps -ef`) และ BSD Style (ไม่มีขีด เช่น `ps aux`)
+- **OffSec Situational Awareness:** คำสั่งสำรวจระบบเบื้องต้นที่รวมอยู่ในบทนี้ ไม่ใช่แค่คำสั่งจำทั่วไป แต่คือชุดคำสั่ง **"Initial Triage Checklist"** ที่แฮกเกอร์ใช้สำรวจเครื่องเหยื่อทันทีที่ได้ Initial Shell (ใคร, ที่ไหน, รันอะไร, มีใครเฝ้าจออยู่, มีพอร์ตไหนเปิดภายใน)
 
 ### 💻 Essential Commands
 ```bash
-# เปิดคู่มือฉบับเต็มของคำสั่ง (กด q เพื่อออก)
-man ls
+# === 1. คู่มือและการขอความช่วยเหลือเร่งด่วน (Manuals & Quick Help) ===
+man ls                          # เปิดคู่มือฉบับเต็มของคำสั่ง (กด q ออก, กด / เพื่อพิมพ์ค้นหาคำ)
+whatis nmap                     # ดูคำอธิบายสั้น ๆ บรรทัดเดียวว่าคำสั่งนี้คืออะไร
+apropos "network"               # ค้นหาคำสั่งที่เกี่ยวข้องจากคำค้นหา (เมื่อนึกชื่อคำสั่งไม่ออก)
+ls --help                       # แสดงคำอธิบายตัวเลือก (Option Cheatsheet) แบบละเอียดในหน้าจอ
+id -h 2>&1 | head -n 5          # ตัวอย่างการใช้ Flag ย่อ -h หรือ --help
 
-# ดูคำอธิบายสั้น ๆ บรรทัดเดียวว่าคำสั่งนี้คืออะไร
-whatis nmap
+# === 2. ตรวจสอบตำแหน่ง Binary และประเภทคำสั่ง (Binary Discovery) ===
+which python3                   # ดู Path ของ Binary ที่ถูกเรียกใช้งานจริงตาม $PATH
+whereis bash                    # แสดงตำแหน่งทั้ง Binary, Source Code และ Man page
+type cd                         # ตรวจสอบว่าเป็น Built-in ของ Shell หรือ External Binary
+type ls                         # ตรวจสอบว่าคำสั่งถูกครอบด้วย Alias หรือไม่
 
-# ค้นหาคำสั่งที่เกี่ยวข้องจากคำค้นหา (เมื่อนึกชื่อคำสั่งไม่ออก)
-apropos "network"
-apropos "firewall"
+# === 3. สำรวจตัวตน สิทธิ์ และเครื่องเป้าหมาย (Identity & System Triage) ===
+id                              # ตรวจสอบ User ID (UID), Group ID (GID) และกลุ่มที่สังกัด (เช่นกลุ่ม sudo)
+who                             # แสดงรายชื่อผู้ใช้ที่กำลังล็อกอินอยู่ในระบบขณะนี้
+hostname                        # แสดงชื่อเครื่องของระบบคอมพิวเตอร์ปัจจุบัน
 
-# ดู Path ที่อยู่ของ Binary ที่ถูกเรียกใช้งานจริง
-which python3
-whereis bash
+# === 4. ตรวจสอบสถาปัตยกรรมและเวอร์ชัน Kernel (Kernel Fingerprinting) ===
+uname                           # แสดงชื่อระบบปฏิบัติการ (Linux)
+uname -r                        # แสดงรุ่น Kernel Release (สำคัญมากในการค้นหา Kernel Exploit ยกระดับสิทธิ์)
+uname -a                        # แสดงข้อมูลระบบแบบสมบูรณ์ (OS, Hostname, Kernel, วันที่ Build, สถาปัตยกรรม CPU)
 
-# ตรวจสอบว่าเป็น Built-in command หรือ External binary
-type cd
-type ls
+# === 5. สำรวจเครือข่ายและการเชื่อมต่อ (Network & Socket Reconnaissance) ===
+ifconfig                        # ตรวจสอบ IP Address และ Interface (คำสั่งคลาสสิกจากชุด net-tools)
+ip a                            # ตรวจสอบ IP Address และ Interface (คำสั่งมาตรฐานสมัยใหม่จากชุด iproute2)
+netstat -tulpn                  # ตรวจสอบพอร์ตและเซอร์วิสที่เปิดรับการเชื่อมต่อ (Listening Ports)
+ss -tulpn                       # Socket Statistics (ทำงานเร็วกว่า netstat นิยมใช้เป็นหลักในปัจจุบัน)
 
-# ตรวจสอบสถานะ Process ที่กำลังทำงานในระบบ (Process Status)
+# === 6. สำรวจฮาร์ดแวร์ อุปกรณ์จัดเก็บ และไฟล์ที่เปิดอยู่ (Hardware & Storage) ===
+lsblk                           # แสดงโครงสร้าง Block Devices (ฮาร์ดดิสก์, SSD, พาร์ติชัน, จุดเมานต์)
+lsusb                           # แสดงรายการอุปกรณ์ USB ทั้งหมดที่เชื่อมต่อกับเครื่อง
+lsof                            # แสดงไฟล์ทั้งหมดที่กำลังถูกเปิดใช้งาน (List Open Files — ยืนยันแนวคิด Everything is a file)
+env                             # แสดงตัวแปรสภาพแวดล้อมทั้งหมด (Environment Variables — จุดหา Password/API Keys)
+
+# === 7. ตรวจสอบ Process ที่กำลังทำงาน (Process Status) ===
 ps                              # ดู Process ที่รันอยู่ใน Terminal Session ปัจจุบัน
 ps aux                          # ส่องทุก Process ในระบบแบบละเอียด (BSD Style — นิยมใช้มากที่สุด)
 ps -ef                          # ส่องทุก Process พร้อมระบุ Parent PID (PPID) (Unix/POSIX Style)
 ```
 
 ### 🧠 Feynman Takeaway & Reflection
-- *สรุปด้วยคำพูดตัวเอง:* 
+- *สรุปด้วยคำพูดตัวเอง:* สัญลักษณ์ท้าย Prompt บ่งบอกระดับอำนาจในระบบ: `$` = User ทั่วไป (สิทธิ์จำกัด), `#` = Root (สิทธิ์สูงสุด/พระเจ้า) — ทุกคำสั่งที่เรียนมาใน 3 ตอนแรก เมื่อมองเผินๆ เหมือนแค่คำสั่งจำ แต่ในมุมมองแฮกเกอร์ มันคือชุดเครื่องมือ **"Host Situational Awareness"** (สำรวจเครื่องเหยื่อใน 60 วินาทีแรกที่เจาะระบบสำเร็จ)
 - *จุดที่น่าสนใจ / ข้อควรระวัง:* 
+  1. **ทำไม 3 คลิปแรกดูเหมือนไม่มีเนื้อหาลึกซึ้ง?** เพราะหลักสูตรปูพื้นฐานเน้นสอน Syntax ให้พิมพ์ตาม แต่ในโลกความปลอดภัยทางไซเบอร์ คำสั่งพวกนี้คือ "ขุมทรัพย์ข่าวกรอง": `uname -r` ใช้หาช่องโหว่ Kernel ยกระดับสิทธิ์, `id` ส่องว่าอยู่กลุ่มที่แอบมีสิทธิ์พิเศษไหม, `ss -tulpn` ส่องหาเซอร์วิสภายในเครื่องที่แอบรันอยู่ (เช่น Database ที่ไม่เปิดให้โลกภายนอกเห็น), และ `env` ส่องหา Credentials / API Keys ที่แอดมินลืมทิ้งไว้
+  2. **คำสั่งคู่เก่า vs ใหม่:** ในวงการลินุกซ์กำลังเปลี่ยนผ่าน `ifconfig` $\rightarrow$ `ip a` และ `netstat` $\rightarrow$ `ss` ซึ่งคำสั่งฝั่งขวาทำงานเร็วกว่าและเป็นค่ามาตรฐาน แต่ในการสอบ Certs และระบบ Enterprise เก่า ๆ ยังต้องรู้และใช้เป็นทั้งสองแบบ
+  3. **การสะกดคำ:** คำสั่งดูอุปกรณ์ USB คือ `lsusb` (List USB) ไม่ใช่ `lsusd`
 
 ---
 
