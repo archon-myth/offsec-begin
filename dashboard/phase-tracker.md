@@ -1,6 +1,6 @@
 # 📊 Phase Tracker & Operational Radar
 
-> **Current Radar:** `Phase 0 — Setup & Mindset` | **Progress:** `[██████░░░░] 60%`  
+> **Current Radar:** `Phase 0 — Setup & Mindset` | **Progress:** `[░░░░░░░░░░] 0%` (Ground Zero)  
 > **Last updated:** 2026-11-08 | **Master Index:** [[index|กลับสู่หน้า Dashboard หลัก]]
 
 ---
@@ -9,7 +9,7 @@
 
 | Phase | Focus Domain | Duration | Status | % | KPI Gate / Requirements |
 | :---: | :--- | :---: | :---: | :---: | :--- |
-| **0** | **Setup & Mindset** | Month 1 | 🔄 **In Progress** | **60%** | Lab built · GitHub repo active · Obsidian vault configured |
+| **0** | **Setup & Mindset** | Month 1 | 🔄 **In Progress** | **0%** | Lab environment ready · Learning begins at Ground Zero |
 | **A** | **Core Foundations** | Month 2–3 | ⏳ Upcoming | 0% | Network+ watched · 8 GitHub artifacts · Bash scanner |
 | **B** | **Scripting & Recon** | Month 4–5 | ⏳ Upcoming | 0% | 4 recon scripts · Regex drill done · TryHackMe 50+ rooms |
 | **C** | **Web Pentesting** | Month 6–8 | ⏳ Upcoming | 0% | PortSwigger Apprentice 100% · 1 pentest report · Bug bounty active |
@@ -34,18 +34,18 @@
 
 ## 🎯 Current Phase Checklist: Phase 0 — Setup & Mindset
 
-**Active since:** 2026-06-05  
+**Active since:** 2026-11-08  
 **Target complete:** Month 1 end  
-**Progress:** `[██████░░░░] 60%`
+**Progress:** `[░░░░░░░░░░] 0%`
 
-### ✅ Completed Milestones:
-- [x] **Install VirtualBox:** Kali Linux Golden Baseline (`Golden_Base_Clean`) + Win11 Lab + clean snapshot
-- [x] **Configure Archon Core SSD integration:** `/mnt/d/Engine` and `/mnt/d/Security`
-- [x] **Create GitHub repo:** `offsec-begin` active and synced with remote
-- [x] **Set up Obsidian knowledge base:** 29+ structured note files across 9 phases + 7 OffSec reporting templates
+### 🛠️ Lab Setup (Completed Baseline):
+- [x] **VirtualBox Lab built:** Kali Linux Golden Baseline (`Golden_Base_Clean`) & Windows 11 Lab operational
+- [x] **External SSD Storage configured:** `D:\Engine`, `D:\Security`, `E:\Active_Labs`
+- [x] **Setup Documentation:** [[Setup-VirtualBox]] และ [[Setup-HybridSSD]]
+- [x] **Git Repository & Vault initialized:** `A:\offsec-begin` active and synced with GitHub
 
-### ⏳ Remaining Milestones (to reach 100%):
-- [ ] **Mindset & Ethics:** อ่าน [[mindset-and-ethics|พ.ร.บ. คอมพิวเตอร์ และ กรอบกติกาจริยธรรม]]
-- [ ] **Master Curriculum Foundations:** เริ่มดูและจดโน้ตตาม [[foundations-execution-blueprint|Bombal vs NetworkChuck Blueprint]]
-- [ ] **TryHackMe Pre-Security:** สมัครและเริ่มทำ [[tryhackme-pre-security|TryHackMe Pre-Security Path]]
-- [ ] **Write personal learning plan:** ทบทวนเป้าหมายและตารางเวลาประจำสัปดาห์
+### 📚 Learning Milestones (Starting from Ground Zero):
+- [ ] **Follow Master Curriculum Foundations:** เริ่มดูคลิปและจดโน้ตตาม [[foundations-execution-blueprint]]
+- [ ] **TryHackMe Pre-Security Path:** เริ่มทำห้องเรียน Pre-Security เมื่อพร้อม
+- [ ] **Read Legal & Mindset Foundations:** ศึกษากรอบ พ.ร.บ. คอมพิวเตอร์ และจริยธรรม
+- [ ] **Establish Daily Rhythm:** ซ้อมรันคำสั่งใน Kali Linux ควบคู่กับการจดโน้ตใน [[linux-fundamentals]]

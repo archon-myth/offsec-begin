@@ -2,23 +2,22 @@
 
 ---
 
-## 🎯 Current Mission Status (Live Operational Radar)
+## 🎯 Current Mission Status (Ground Zero — 0%)
 
 > [!TIP]
 > **Active Focus:** `Phase 0 — Setup & Mindset` (Month 1)  
-> **Progress:** `[██████░░░░] 60%`  
+> **Progress:** `[░░░░░░░░░░] 0%` (Ready to Start)  
 > **Status:** 🔄 **In Progress** | **Last Updated:** 2026-11-08  
 > **Full Tracker Details:** [[phase-tracker|เปิดดูตาราง Phase Tracker แบบละเอียด]]  
 >  
-> **✅ ความคืบหน้าที่สำเร็จแล้ว (Phase 0):**  
+> **✅ สภาพแวดล้อม Lab และเอกสารที่พร้อมใช้งานแล้ว:**  
 > 1. VirtualBox Kali Linux Golden Baseline (`Golden_Base_Clean`) & Windows 11 Lab ใช้งานได้ 100%  
 > 2. External SSD Storage Architecture (`D:\Engine`, `D:\Security`, `E:\Active_Labs`) เชื่อมต่อเรียบร้อย  
-> 3. Obsidian Knowledge Base (`A:\offsec-begin`) จัดโครงสร้างโน้ตครบ 9 Phase และซิงค์ขึ้น GitHub สำเร็จ  
+> 3. เอกสารคู่มือระบบปฏิบัติการ: [[Setup-VirtualBox]] และ [[Setup-HybridSSD]]  
 >  
-> **⏳ เป้าหมายที่กำลังดำเนินการ (Next Actions):**  
-> 1. [[mindset-and-ethics|อ่านกฎหมาย พ.ร.บ. คอมพิวเตอร์ และกรอบจริยธรรม OffSec]]  
-> 2. เรียนรู้ Foundations ตาม [[foundations-execution-blueprint|David Bombal vs NetworkChuck Blueprint]]  
-> 3. เข้าสู่การฝึกบน [[tryhackme-pre-security|TryHackMe Pre-Security Path]]
+> **🚀 ก้าวแรกของการเรียนรู้ (Next Actions):**  
+> 1. เปิดดูคลิปแรกของหลักสูตรตาม [[foundations-execution-blueprint|Master Curriculum Blueprint]]  
+> 2. เริ่มต้นจดบันทึกลงในสมุดเล่มแรก: [[linux-fundamentals]]
 
 ---
 
@@ -27,7 +26,7 @@
 | File / Folder | Description & Direct Link |
 | :--- | :--- |
 | **Phase Tracker** | [[phase-tracker|phase-tracker.md]] — ความคืบหน้าระดับ Phase, เปอร์เซ็นต์, และ KPI Gates |
-| **Master Curriculum** | [[foundations-execution-blueprint|foundations-execution-blueprint.md]] — 10 Playlists ของ Bombal & NetworkChuck |
+| **Master Curriculum** | [[foundations-execution-blueprint|foundations-execution-blueprint.md]] — แผนที่เรียนรู้และสารบัญคลิปทั้งหมด |
 | **Bug Bounty Log** | [[bug-bounty-log|bug-bounty-log.md]] — บันทึกผลการล่าช่องโหว่และ Bug Bounty |
 | **All Templates** | [templates/](../templates/) — 7 แม่แบบรายงานและบันทึกแล็บมาตรฐาน S.P.E.A.R. |
 
@@ -37,9 +36,9 @@
 
 | Phase | Folder | Focus Domain | Key Notes Available |
 | :---: | :--- | :--- | :--- |
-| **0** | [phase-0-setup](../phase-0-setup/) | Setup & Mindset | [[Setup-VirtualBox]], [[Setup-HybridSSD]], [[mindset-and-ethics]] |
-| **A** | [phase-a-foundations](../phase-a-foundations/) | Linux, Networking, Bash | [[linux-fundamentals]], [[bash-scripting-mastery]], [[linux-internals-and-security]], [[networking-packet-mechanics]], [[tryhackme-pre-security]], [[networking-packet-mechanics#module-5--http-protocol-mechanics--web-headers-curl--inspection]] |
-| **B** | [phase-b-scripting](../phase-b-scripting/) | Python, Regex, Recon | [[python-for-offsec]], [[regex-mastery]], [[recon-automation]], [[recon-automation]], [[reverse-shells-and-metasploit]], [[password-cracking-hashcat]], [[hardware-badusb-attacks]] |
+| **0** | [phase-0-setup](../phase-0-setup/) | Setup & Mindset | [[Setup-VirtualBox]], [[Setup-HybridSSD]] |
+| **A** | [phase-a-foundations](../phase-a-foundations/) | Linux, Networking, Bash | [[linux-fundamentals]], [[bash-scripting-mastery]], [[linux-internals-and-security]], [[networking-packet-mechanics]] |
+| **B** | [phase-b-scripting](../phase-b-scripting/) | Python, Regex, Recon | [[python-for-offsec]], [[regex-mastery]], [[recon-automation]], [[reverse-shells-and-metasploit]], [[password-cracking-hashcat]], [[hardware-badusb-attacks]] |
 | **C** | [phase-c-web](../phase-c-web/) | Web Exploitation & OWASP | [[owasp-top-10-deep-dive]], [[portswigger-web-security-academy]], [[burp-suite-mastery]], [[bug-bounty-methodology]] |
 | **D** | [phase-d-exploit](../phase-d-exploit/) | Binary Exploitation & BoF | [[x86-x64-assembly-internals]], [[buffer-overflow-fundamentals]], [[modern-binary-protections]] |
 | **E** | [phase-e-cloud](../phase-e-cloud/) | Cloud Offensive Security | [[aws-offensive-security]], [[azure-and-gcp-offensive-security]], [[container-and-k8s-security]] |
