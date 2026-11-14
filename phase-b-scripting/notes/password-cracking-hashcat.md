@@ -66,5 +66,6 @@ hashcat -m 22000 hash.22000 /usr/share/wordlists/rockyou.txt -d 1
 ```
 
 ### 🧠 Feynman Takeaway & Reflection
-- *สรุปด้วยคำพูดตัวเอง:* 
-- *จุดที่น่าสนใจ / ข้อควรระวัง:*
+#### 💡 แก่นความคิดและกลไกสำคัญ (Core Mental Models)
+
+#### ⚠️ กับดักทางเทคนิคและข้อควรระวัง (Gotchas & Pitfalls)

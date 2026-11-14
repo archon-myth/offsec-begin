@@ -1,7 +1,7 @@
 # 📊 Phase Tracker & Operational Radar
 
 > **Current Radar:** Phase 0 — Setup & Mindset | **Progress:** [█████░░░░░] 50% (Lab Setup Complete · Theory Pending)  
-> **Last updated:** 2026-11-08 | **Master Index:** [[index|กลับสู่หน้า Dashboard หลัก]]
+> **Last updated:** 2026-11-14 | **Master Index:** [[index|กลับสู่หน้า Dashboard หลัก]]
 
 ---
 
@@ -10,7 +10,7 @@
 | Phase | Focus Domain | Duration | Status | % | KPI Gate / Milestone Requirements |
 | :---: | :--- | :---: | :---: | :---: | :--- |
 | **0** | **Setup & Mindset** | Month 1 | 🔄 **In Progress** | **50%** | Lab environment ready (Kali + SSD) · Theory & Laws pending |
-| **A** | **Core Foundations** | Month 2–3 | ⏳ Upcoming | 0% | Linux, Networking, Bash scanner · 8 GitHub artifacts |
+| **A** | **Core Foundations** | Month 2–3 | 🔄 **In Progress** | **50%** | Linux, Networking, Bash scanner · 8 GitHub artifacts |
 | **B** | **Scripting & Recon** | Month 4–5 | ⏳ Upcoming | 0% | Python/Scapy recon scripts · Regex drill · TryHackMe 50+ rooms |
 | **C** | **Web Pentesting** | Month 6–7 | ⏳ Upcoming | 0% | PortSwigger Apprentice 100% · 1 pentest report · Bug bounty active |
 | **D** | **Exploit Dev** | Month 8–10 | ⏳ Upcoming | 0% | pwn.college complete · BoF exploit · **eJPT Exam Gate** |

@@ -84,5 +84,6 @@ hydra 10.10.10.10 http-post-form "/login.php:user=^USER^&pass=^PASS^:F=Incorrect
 ```
 
 ### 🧠 Feynman Takeaway & Reflection
-- *สรุปด้วยคำพูดตัวเอง:* 
-- *จุดที่น่าสนใจ / ข้อควรระวัง:*
+#### 💡 แก่นความคิดและกลไกสำคัญ (Core Mental Models)
+
+#### ⚠️ กับดักทางเทคนิคและข้อควรระวัง (Gotchas & Pitfalls)

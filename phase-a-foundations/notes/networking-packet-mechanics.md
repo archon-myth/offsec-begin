@@ -31,8 +31,9 @@
 | `/30` | `255.255.255.252` | 2 (Point-to-Point) | 4 |
 
 ### 🧠 Feynman Takeaway & Reflection
-- *สรุปด้วยคำพูดตัวเอง:* 
-- *จุดที่น่าสนใจ / ข้อควรระวัง:* 
+#### 💡 แก่นความคิดและกลไกสำคัญ (Core Mental Models)
+
+#### ⚠️ กับดักทางเทคนิคและข้อควรระวัง (Gotchas & Pitfalls)
 
 ---
 
@@ -110,5 +111,6 @@ tshark -i eth0 -Y "http.request.method == POST" -T fields -e http.file_data
 | **UDP Scan** | `-sU` | ส่ง UDP Packet ว่าง $\rightarrow$ ถ้า Port ปิด จะได้ `ICMP Port Unreachable` | ทำงานช้า ต้องรอ Timeout |
 
 ### 🧠 Feynman Takeaway & Reflection
-- *สรุปด้วยคำพูดตัวเอง:* 
-- *จุดที่น่าสนใจ / ข้อควรระวัง:*
+#### 💡 แก่นความคิดและกลไกสำคัญ (Core Mental Models)
+
+#### ⚠️ กับดักทางเทคนิคและข้อควรระวัง (Gotchas & Pitfalls)
